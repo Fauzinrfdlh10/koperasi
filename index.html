@@ -18,7 +18,22 @@
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/responsive.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
     <style>
+       /* Jika memiliki file Trajan Pro, gunakan font-face */
+    @font-face {
+      font-family: 'Trajan Pro';
+      src: url('fonts/TrajanPro-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    /* Gaya font untuk nama */
+    .detail-box h5 {
+      font-family: 'Trajan Pro', 'Cinzel', serif; /* Gunakan Cinzel jika Trajan Pro tidak tersedia */
+      font-weight: bold;
+      font-size: 20px;
+    }
         /* Hero Area Background */
         .hero_area {
             position: relative;
@@ -203,7 +218,7 @@
         /* Gaya untuk footer */
         .footer_section {
             background-color: #333;
-            color: #000000;
+            color: #fff;
             padding: 40px 0;
             text-align: center;
         }
@@ -300,51 +315,50 @@
     </section>
 
     <!-- team section -->
-    <section class="team_section layout_padding">
-        <div class="container">
-            <div class="heading_container heading_center">
-                <h2 class="animated-font">Sumber Daya Manusia</h2>
-                <p>Sumber daya manusia didukung oleh IATPI</p>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-6 mx-auto">
-                    <div class="box slide-up">
-                        <div class="img-box">
-                            <img src="images/t1.png" alt="" class="animated-image">
-                        </div>
-                        <div class="detail-box">
-                            <h5>Randi Mamola</h5>
-                            <h6>Sekretaris</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 mx-auto">
-                    <div class="box slide-up">
-                        <div class="img-box">
-                            <img src="images/t2.png" alt="" class="animated-image">
-                        </div>
-                        <div class="detail-box">
-                            <h5>Elldy Theny Tampi</h5>
-                            <h6>Ketua</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 mx-auto">
-                    <div class="box slide-up">
-                        <div class="img-box">
-                            <img src="images/t3.png" alt="" class="animated-image">
-                        </div>
-                        <div class="detail-box">
-                            <h5>Muhammad Kholik Mantri</h5>
-                            <h6>Bendahara</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end team section -->
-
+<section class="team_section layout_padding">
+  <div class="container">
+      <div class="heading_container heading_center">
+          <h2 class="animated-font">Sumber Daya Manusia</h2>
+          <p>Sumber daya manusia didukung oleh IATPI</p>
+      </div>
+      <div class="row">
+          <div class="col-md-4 col-sm-6 mx-auto">
+              <div class="box slide-up">
+                  <div class="img-box">
+                      <img src="images/t2.png" alt="" class="animated-image">
+                  </div>
+                  <div class="detail-box">
+                      <h5>E. Theny Tampi</h5>
+                      <h6>Ketua</h6>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mx-auto">
+              <div class="box slide-up">
+                  <div class="img-box">
+                      <img src="images/t1.png" alt="" class="animated-image">
+                  </div>
+                  <div class="detail-box">
+                      <h5>Randi Mamola</h5>
+                      <h6>Sekretaris</h6>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mx-auto">
+              <div class="box slide-up">
+                  <div class="img-box">
+                      <img src="images/t3.png" alt="" class="animated-image">
+                  </div>
+                  <div class="detail-box">
+                      <h5>Muhammad Khaliq Mantri</h5>
+                      <h6>Bendahara</h6>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- end team section -->
     <!-- Footer Section -->
     <footer class="footer_section">
         <div class="container">
