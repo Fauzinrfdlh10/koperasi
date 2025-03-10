@@ -67,6 +67,49 @@
     .contact-box a:hover {
       color: #007bff;
     }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .contact-box {
+        margin-bottom: 15px;
+      }
+      .contact-box i {
+        font-size: 30px;
+      }
+      .contact-box h5 {
+        font-size: 18px;
+      }
+      .contact-box a {
+        font-size: 14px;
+      }
+      .navbar-nav .nav-link {
+        padding: 10px 15px; /* Adjust padding for mobile */
+      }
+      .navbar-brand img {
+        height: 50px; /* Adjust logo size for mobile */
+      }
+    }
+
+    @media (max-width: 576px) {
+      .contact-box {
+        padding: 20px;
+      }
+      .contact-box i {
+        font-size: 25px;
+      }
+      .contact-box h5 {
+        font-size: 16px;
+      }
+      .contact-box a {
+        font-size: 14px;
+      }
+      .heading_container h2 {
+        font-size: 24px; /* Adjust heading size for small devices */
+      }
+      .heading_container p {
+        font-size: 14px; /* Adjust paragraph size for small devices */
+      }
+    }
   </style>
 </head>
 
@@ -193,7 +236,7 @@
             <a href="https://html.design/">..</a>
         </p>
     </div>
-</footer>
+  </footer>
 
   <!-- jQuery -->
   <script src="js/jquery-3.4.1.min.js"></script>
@@ -209,4 +252,4 @@
   <script src="js/custom.js"></script>
 </body>
 
-</html>   
+</html>
