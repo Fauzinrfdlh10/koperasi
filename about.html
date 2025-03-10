@@ -14,22 +14,53 @@
   <link rel="shortcut icon" href="images/fevicon.png" type="image/x-icon">
   <title>Finter</title>
 
-  <!-- bootstrap core css -->
+  <!-- Bootstrap core CSS -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
-  <!-- fonts style -->
+  <!-- Fonts Style -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-  <!--owl slider stylesheet -->
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <!-- Owl Carousel -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <!-- nice select -->
+  <!-- Nice Select -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
-  <!-- font awesome style -->
-  <link href="css/font-awesome.min.css" rel="stylesheet" />
-
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
+  <!-- Responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+    /* Navbar dengan warna hitam transparan */
+    .header_bottom {
+      background-color: rgba(0, 0, 0, 0.7); /* Hitam transparan */
+      padding: 10px 0;
+    }
+    .navbar-nav .nav-link {
+      color: #fff !important; /* Warna teks putih */
+      font-weight: 600;
+      margin: 0 10px;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #007bff !important; /* Warna teks biru saat hover */
+    }
+    .navbar-brand img {
+      height: 70px;
+    }
+
+    /* Dropdown untuk Top Management */
+    .dropdown-menu {
+      background-color: rgba(0, 0, 0, 0.8); /* Hitam transparan */
+      border: none;
+    }
+    .dropdown-item {
+      color: #fff !important;
+    }
+    .dropdown-item:hover {
+      background-color: #007bff; /* Warna biru saat hover */
+      color: #fff !important;
+    }
+  </style>
 </head>
 
 <body class="sub_page">
@@ -38,30 +69,38 @@
       <img src="images/hero-bg.jpg" alt="">
     </div>
 
+    <!-- Navbar -->
     <div class="header_bottom">
       <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
           <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="Logo" style="height: 70px;">
+            <img src="images/logo2.png" alt="Logo">
           </a>
-
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class=""> </span>
+            <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav  ">
+            <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html"> About</a>
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Top Management
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="service.html">Pendiri Koperasi</a>
+                  <a class="dropdown-item" href="anggota.html">Anggota Koperasi</a>
+                </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="service.html">Structure</a>
+                <a class="nav-link" href="team.html">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="team.html"> Team </a>
+                <a class="nav-link" href="portofolio.html">Portofolio</a>
               </li>
             </ul>
           </div>
@@ -98,6 +137,43 @@
     <p>Perjalanan awal tentang riwayat singkat kelahiran Koperasi Energi Pertambangan, Perdagangan. Patuari Mining Niaga.</p>
     <p>Patuari Mining Niaga merupakan koperasi yang bergerak dalam unit usaha pertambangan bijih logam emas dan perak, energi terbarukan, pemurnian air, treatment limbah WTP, STP, IPAL, serta jasa perdagangan. Koperasi ini didirikan pada Jumat, 7 Februari 2025.</p>
     <p>Koperasi Patuari Mining Niaga mengolah bijih logam dengan metode heap leaching cyanida + GDA (gold dressing agent). Transformasi tahun 2025 dilakukan oleh E. Theny Tampi, Randi Mamola, dan Kholiq Mantiri yang sepakat mendirikan koperasi dengan metode pertambangan hydrometallurgy dan pyrometallurgy yang ramah lingkungan.</p>
+  </div>
+</div>
+
+<div class="col-md-6 d-flex flex-column">
+  <div class="detail-box flex-grow-1 domisili-perusahaan">
+    <div class="heading_container">
+      <h2>Menegakkan Etika Bisnis yang Tinggi dan Pertanggung Jawaban</h2>
+    </div>
+    <!-- Prinsip Etika Bisnis -->
+    <div class="prinsip-etika">
+      <p>Prinsip Etika Bisnis</p>
+      <p>Menjunjung tinggi integritas, moralitas, dan tanggung jawab dalam semua aspek bisnis dalam wirausaha.</p>
+    </div>
+
+    <!-- Sistem Menegakkan Etika Bisnis -->
+    <div class="sistem-etika">
+      <h4>Sistem Menegakkan Etika Bisnis:</h4>
+      <ol>
+        <li>Membuat kode etik yang jelas dan spesifik untuk memandu perilaku bisnis.</li>
+        <li>Melatih para anggota koperasi tentang etika bisnis dan pentingnya menjunjung tinggi integritas, moralitas, dan tanggung jawab.</li>
+        <li>Mengawasi dan mengontrol operasional bisnis untuk memastikan bahwa etika bisnis dijunjung tinggi.</li>
+        <li>Menghargai whistleblower yang melaporkan pelanggaran etika bisnis.</li>
+        <li>Mengambil tindakan yang tegas terhadap pelanggaran etika bisnis.</li>
+      </ol>
+    </div>
+
+    <!-- Manfaat Menegakkan Etika Bisnis -->
+    <div class="manfaat-etika">
+      <h4>Manfaat Menegakkan Etika Bisnis:</h4>
+      <ol>
+        <li>Membangun kepercayaan dengan stakeholder, pemangku kepentingan, pelanggan, mitra koperasi, anggota koperasi, dan investor, serta masyarakat umumnya.</li>
+        <li>Mengurangi risiko pelanggaran hukum dan kerugian finansial.</li>
+        <li>Meningkatkan produktivitas anggota koperasi dan memperbaiki kualitas kinerja anggota koperasi serta mitra koperasi.</li>
+        <li>Mendorong kami untuk mengambil peran dalam berkontribusi kepada negara dan masyarakat.</li>
+        <li>Berpegang pada tanggung jawab adalah wilayah tertinggi dalam pemikiran. Memiliki rasa bertanggung jawab adalah sifat terbaik karena memberi Anda keberanian, energi, dan kebijaksanaan. Dirangsang oleh rasa bertanggung jawab untuk berjuang demi sukses dalam kehidupan.</li>
+      </ol>
+    </div>
   </div>
 </div>
 

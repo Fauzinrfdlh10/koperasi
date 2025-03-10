@@ -14,22 +14,60 @@
   <link rel="shortcut icon" href="images/fevicon.png" type="image/x-icon">
   <title>Finter</title>
 
-  <!-- bootstrap core css -->
+  <!-- Bootstrap CSS -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
-  <!-- fonts style -->
+  <!-- Fonts Style -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <!--owl slider stylesheet -->
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <!-- Owl Carousel -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <!-- nice select -->
+  <!-- Nice Select -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
-  <!-- font awesome style -->
-  <link href="css/font-awesome.min.css" rel="stylesheet" />
-
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
+  <!-- Responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+    /* Gaya untuk bagian kontak */
+    .contact-section {
+      padding: 60px 0;
+      background: #f9f9f9;
+    }
+    .contact-box {
+      text-align: center;
+      padding: 30px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin-bottom: 20px; /* Jarak antar kotak */
+    }
+    .contact-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .contact-box i {
+      font-size: 40px;
+      color: #007bff;
+      margin-bottom: 20px;
+    }
+    .contact-box h5 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .contact-box a {
+      color: #333;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .contact-box a:hover {
+      color: #007bff;
+    }
+  </style>
 </head>
 
 <body class="sub_page">
@@ -37,130 +75,138 @@
     <div class="hero_bg_box">
       <img src="images/hero-bg.jpg" alt="">
     </div>
-      <div class="header_bottom">
-        <div class="container-fluid">
-          <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <a class="navbar-brand" href="index.html">
-              <img src="images/logo.png" alt="Logo" style="height: 70px;">
-            </a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class=""> </span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav  ">
-                <li class="nav-item ">
-                  <a class="nav-link" href="index.html">Home </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html"> About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="service.html">Structure</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="team.html"> Team <span class="sr-only">(current)</span> </a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
+    <!-- Navbar -->
+    <div class="header_bottom">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo2.png" alt="Logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Top Management
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="service.html">Pendiri Koperasi</a>
+                  <a class="dropdown-item" href="anggota.html">Anggota Koperasi</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="team.html">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portofolio.html">Portofolio</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-    </header>
-    <!-- end header section -->
+    </div>
   </div>
 
- <!-- team section -->
 
- <section class="team_section layout_padding">
-  <div class="container">
-    <div class="heading_container heading_center">
-      <h2>
-        Sumber Daya Manusia 
-      </h2>
-      <p>
-        Sumber daya manusia didukung oleh IATPI
-      </p>
-    </div>
-    <div class="row">
-      <div class="col-md-4 col-sm-6 mx-auto">
-        <div class="box">
-          <div class="img-box">
-            <img src="images/t1.png" alt="">
-          </div>
-          <div class="detail-box">
-            <h5>
-              Randi Mamola
-            </h5>
-            <h6 class="">
-              supervisor
-            </h6>
+  <!-- Kontak Section -->
+  <section class="contact-section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Kontak Kami
+        </h2>
+        <p>
+          Hubungi kami melalui media sosial atau email di bawah ini:
+        </p>
+      </div>
+      <div class="row">
+        <!-- Instagram -->
+        <div class="col-md-3 col-sm-6 mx-auto">
+          <div class="contact-box">
+            <i class="fab fa-instagram"></i>
+            <h5>Instagram</h5>
+            <a href="#" data-toggle="modal" data-target="#comingSoonModal">@yourinstagram</a>
           </div>
         </div>
-      </div>
-      <div class="col-md-4 col-sm-6 mx-auto">
-        <div class="box">
-          <div class="img-box">
-            <img src="images/t2.png" alt="">
-          </div>
-          <div class="detail-box">
-            <h5>
-              Elldy Theny Tampi
-            </h5>
-            <h6 class="">
-              supervisor
-            </h6>
+        <!-- WhatsApp -->
+        <div class="col-md-3 col-sm-6 mx-auto">
+          <div class="contact-box">
+            <i class="fab fa-whatsapp"></i>
+            <h5>WhatsApp</h5>
+            <a href="https://wa.me/+6285186068917" target="_blank">+62 851 8606 8917</a>
           </div>
         </div>
-      </div>
-      <div class="col-md-4 col-sm-6 mx-auto">
-        <div class="box">
-          <div class="img-box">
-            <img src="images/t3.png" alt="">
+        <!-- Facebook -->
+        <div class="col-md-3 col-sm-6 mx-auto">
+          <div class="contact-box">
+            <i class="fab fa-facebook"></i>
+            <h5>Facebook</h5>
+            <a href="#" data-toggle="modal" data-target="#comingSoonModal">Your Facebook</a>
           </div>
-          <div class="detail-box">
-            <h5>
-              Muhammad Kholik Mantri
-            </h5>
-            <h6 class="">
-              supervisor
-            </h6>
+        </div>
+        <!-- Email -->
+        <div class="col-md-3 col-sm-6 mx-auto">
+          <div class="contact-box">
+            <i class="fas fa-envelope"></i>
+            <h5>Email</h5>
+            <a href="mailto:patuariminingniaga@gmail.com">patuariminingniaga@gmail.com</a>
           </div>
         </div>
       </div>
     </div>
+  </section>
+
+  <!-- Modal Coming Soon -->
+  <div class="modal fade" id="comingSoonModal" tabindex="-1" aria-labelledby="comingSoonModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="comingSoonModalLabel">Info</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Coming Soon!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+        </div>
+      </div>
+    </div>
   </div>
-</section>
 
-  <!-- end team section -->
-
-  <!-- footer section -->
+  <!-- Footer Section -->
   <footer class="footer_section">
     <div class="container">
-      <p>
-        &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href="https://html.design/">Free Html Templates</a>
-      </p>
+        <p>
+            &copy; <span id="displayYear"></span> All Rights Reserved By
+            <a href="https://html.design/">..</a>
+        </p>
     </div>
-  </footer>
-  <!-- footer section -->
+</footer>
 
-  <!-- jQery -->
+  <!-- jQuery -->
   <script src="js/jquery-3.4.1.min.js"></script>
-  <!-- popper js -->
+  <!-- Popper JS -->
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <!-- bootstrap js -->
+  <!-- Bootstrap JS -->
   <script src="js/bootstrap.js"></script>
-  <!-- owl slider -->
+  <!-- Owl Carousel -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <!-- nice select -->
+  <!-- Nice Select -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
-  <!-- custom js -->
+  <!-- Custom JS -->
   <script src="js/custom.js"></script>
-  <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
-  <!-- End Google Map -->
 </body>
 
-</html>
+</html>   
