@@ -63,16 +63,16 @@
         }
         /* Detail Box (Text and Logo) */
         .hero_area .detail-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-    z-index: 1;
-    max-width: 80%; /* Batasi lebar maksimal */
-    padding: 20px; /* Tambah padding agar lebih rapi */
-}
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            z-index: 1;
+            max-width: 80%; /* Batasi lebar maksimal */
+            padding: 20px; /* Tambah padding agar lebih rapi */
+        }
         .detail-box h1 {
             font-size: 3rem;
             font-weight: bold;
@@ -121,6 +121,85 @@
             max-width: 100%; /* Ensure images are responsive */
             height: auto; /* Maintain aspect ratio */
         }
+        /* Struktur Koperasi Section */
+        .top-members {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .team-member {
+            text-align: center;
+            margin: 10px;
+            flex: 1 1 30%; /* Flex properties for responsive layout */
+        }
+        .team-member .img-box img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+        .team-member .img-box img:hover {
+            transform: scale(1.1);
+        }
+        .team-member h3 {
+            margin-top: 10px;
+            font-size: 1.5rem;
+        }
+        .team-member p {
+            font-size: 1rem;
+            color: #555;
+        }
+        @media (max-width: 768px) {
+            .team-member {
+                flex: 1 1 100%; /* Full width on smaller screens */
+            }
+        }
+        /* Animasi Fade In */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        /* Animasi Slide Up */
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        /* Class untuk animasi */
+        .fade-in {
+            opacity: 0;
+        }
+        .slide-up {
+            opacity: 0;
+        }
+        /* Trigger animasi saat elemen muncul */
+        .fade-in.visible {
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+        .slide-up.visible {
+            animation: slideUp 1s ease-in-out forwards;
+        }
+        /* Delay untuk setiap anggota */
+        .team-member:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+        .team-member:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+        .team-member:nth-child(3) {
+            animation-delay: 0.6s;
+        }
     </style>
 </head>
 <body>
@@ -157,7 +236,7 @@
                                 <a class="nav-link" href="about.html">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="service.html">Services</a>
+                                <a class="nav-link" href="service.html">Structure</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="team.html">Team</a>
@@ -176,57 +255,48 @@
             <p class="animated-font">Jl. Sam Ratulangi No.458. Sarang Inovasi Indonesia Building Lt. 3 Ranotana, Kec. Sario, Kota Manado, Sulawesi Utara 95116.</p>
         </div>
     </div>
-    <!-- Service Section -->
     <section class="service_section layout_padding">
       <div class="container">
         <div class="heading_container heading_center ">
-          <h2 class="animated-font">Struktur Anggota</h2>
-          <p class="col-lg-8 px-0 slide-up animated-font">
+          <h2 class="">
+            STRUKTUR KOPERASI PATUARI MINING NIAGA
+          </h2>
+          <p class="col-lg-8 px-0">
             Struktur anggota kami terdiri dari beberapa departemen yang bekerja sama untuk mencapai tujuan kami
           </p>
         </div>
-        <div class="service_container">
-          <div class="carousel-wrap ">
-            <div class="service_owl-carousel owl-carousel">
-              <div class="item">
-                <div class="box slide-up">
-                  <div class="img-box">
-                    <img src="images/s1.png" alt="" class="animated-image" />
-                  </div>
-                  <div class="detail-box">
-                    <h5>Home Welding</h5>
-                    <p>when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal</p>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="box slide-up">
-                  <div class="img-box">
-                    <img src="images/s1.png" alt="" class="animated-image" />
-                  </div>
-                  <div class="detail-box">
-                    <h5>Machine Welding</h5>
-                    <p>when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal</p>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="box slide-up">
-                  <div class="img-box">
-                    <img src="images/s1.png" alt="" class="animated-image" />
-                  </div>
-                  <div class="detail-box">
-                    <h5>Car Welding</h5>
-                    <p>when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal</p>
-                  </div>
-                </div>
-              </div>
+  
+        <!-- Ketua, Wakil Ketua, dan Bendahara -->
+        <div class="top-members">
+          <div class="team-member fade-in slide-up">
+            <div class="img-box">
+              <img src="images/s1.png" alt="Ketua" />
+            </div>
+            <h3>Ketua</h3>
+            <p>E. Theny Tampi</p>
+          </div>
+          <div class="team-member fade-in slide-up">
+            <div class="img-box">
+              <img src="images/s1.png" alt="Sekretaris" />
+            </div>
+            <h3>Sekretaris</h3>
+            <p>Randi Mamola</p>
+          </div>
+          <div class="team-member fade-in slide-up">
+            <div class="img-box">
+              <img src="images/s1.png" alt="Bendahara" />
+            </div>
+            <h3>Bendahara</h3>
+            <p>Muhammad Kholiq Mantiri</p>
+          </div>
+        </div>
+  
               <!-- Add more items as needed -->
             </div>
           </div>
         </div>
         <div class="btn-box">
-          <a href="">Read More</a>
+          <a href="service.html">Read More</a>
         </div>
       </div>
     </section>
@@ -284,7 +354,7 @@
               </div>
               <div class="detail-box">
                 <h5>Randi Mamola</h5>
-                <h6>supervisor</h6>
+                <h6>Sekretaris</h6>
               </div>
             </div>
           </div>
@@ -295,7 +365,7 @@
               </div>
               <div class="detail-box">
                 <h5>Elldy Theny Tampi</h5>
-                <h6>supervisor</h6>
+                <h6>Ketua</h6>
               </div>
             </div>
           </div>
@@ -306,7 +376,7 @@
               </div>
               <div class="detail-box">
                 <h5>Muhammad Kholik Mantri</h5>
-                <h6>supervisor</h6>
+                <h6>Bendahara</h6>
               </div>
             </div>
           </div>
@@ -350,7 +420,10 @@
             observer.unobserve(entry.target); // Stop observing after it becomes visible
           }
         });
+      }, {
+        threshold: 0.5 // Trigger when 50% of the element is visible
       });
+
       // Observe elements that should animate on scroll
       document.querySelectorAll('.fade-in, .slide-up, .zoom-in, .animated-font, .animated-image, .logo-image').forEach(element => {
         observer.observe(element);
