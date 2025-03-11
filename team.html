@@ -14,101 +14,66 @@
   <link rel="shortcut icon" href="images/fevicon.png" type="image/x-icon">
   <title>Finter</title>
 
-  <!-- Bootstrap CSS -->
+  <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
-  <!-- Fonts Style -->
+  <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <!-- Owl Carousel -->
+  <!--owl slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <!-- Nice Select -->
+  <!-- nice select -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
-  <!-- Responsive style -->
+  <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
   <style>
-    /* Gaya untuk bagian kontak */
-    .contact-section {
-      padding: 60px 0;
-      background: #f9f9f9;
-    }
-    .contact-box {
+    .team-member {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 10px;
       text-align: center;
-      padding: 30px;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      margin-bottom: 20px; /* Jarak antar kotak */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: 200px;
     }
-    .contact-box:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    }
-    .contact-box i {
-      font-size: 40px;
-      color: #007bff;
-      margin-bottom: 20px;
-    }
-    .contact-box h5 {
-      font-size: 20px;
-      font-weight: 600;
-      margin-bottom: 10px;
-    }
-    .contact-box a {
+
+    .team-member h3 {
+      margin: 0;
+      font-size: 18px;
       color: #333;
-      text-decoration: none;
-      font-size: 16px;
-    }
-    .contact-box a:hover {
-      color: #007bff;
     }
 
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
-      .contact-box {
-        margin-bottom: 15px;
-      }
-      .contact-box i {
-        font-size: 30px;
-      }
-      .contact-box h5 {
-        font-size: 18px;
-      }
-      .contact-box a {
-        font-size: 14px;
-      }
-      .navbar-nav .nav-link {
-        padding: 10px 15px; /* Adjust padding for mobile */
-      }
-      .navbar-brand img {
-        height: 50px; /* Adjust logo size for mobile */
-      }
+    .team-member p {
+      margin: 5px 0 0;
+      font-size: 14px;
+      color: #777;
     }
 
-    @media (max-width: 576px) {
-      .contact-box {
-        padding: 20px;
-      }
-      .contact-box i {
-        font-size: 25px;
-      }
-      .contact-box h5 {
-        font-size: 16px;
-      }
-      .contact-box a {
-        font-size: 14px;
-      }
-      .heading_container h2 {
-        font-size: 24px; /* Adjust heading size for small devices */
-      }
-      .heading_container p {
-        font-size: 14px; /* Adjust paragraph size for small devices */
-      }
+    .top-members {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .img-box img {
+      width: 100px; /* Ukuran foto disesuaikan */
+      height: 100px; /* Ukuran foto disesuaikan */
+      border-radius: 50%; /* Membuat foto bulat */
+      object-fit: cover; /* Memastikan foto tidak terdistorsi */
+    }
+
+    .service_owl-carousel .img-box img {
+      width: 150px; /* Ukuran foto di carousel */
+      height: 150px; /* Ukuran foto di carousel */
+      border-radius: 50%; /* Membuat foto bulat */
+      object-fit: cover; /* Memastikan foto tidak terdistorsi */
     }
   </style>
 </head>
@@ -143,8 +108,11 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="service.html">Pendiri Koperasi</a>
+                  <a class="dropdown-item" href="advisor pengawas.html">Advisor Pengawas</a>
+                  <a class="dropdown-item" href="legal koperasi.html">Legal Koperasi</a>
+                  <a class="dropdown-item" href="dewan pengawas.html">Dewan Pengawas</a>
                   <a class="dropdown-item" href="anggota.html">Anggota Koperasi</a>
-                </div>
+              </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="team.html">Contact</a>
@@ -159,74 +127,46 @@
     </div>
   </div>
 
+  <!-- service section -->
 
-  <!-- Kontak Section -->
-  <section class="contact-section layout_padding">
+  <section class="service_section layout_padding">
     <div class="container">
-      <div class="heading_container heading_center">
-        <h2>
-          Kontak Kami
+      <div class="heading_container heading_center ">
+        <h2 class="">
+          STRUKTUR KOPERASI PATUARI MINING NIAGA
         </h2>
-        <p>
-          Hubungi kami melalui media sosial atau email di bawah ini:
+        <p class="col-lg-8 px-0">
+          Struktur anggota kami terdiri dari beberapa departemen yang bekerja sama untuk mencapai tujuan kami
         </p>
       </div>
-      <div class="row">
-        <!-- Instagram -->
-        <div class="col-md-3 col-sm-6 mx-auto">
-          <div class="contact-box">
-            <i class="fab fa-instagram"></i>
-            <h5>Instagram</h5>
-            <a href="#" data-toggle="modal" data-target="#comingSoonModal">@yourinstagram</a>
+
+      <!-- Ketua, Wakil Ketua, dan Bendahara -->
+      <div class="top-members">
+        <div class="team-member">
+          <div class="img-box">
+            <img src="images/a2.png" alt="Ketua" />
           </div>
+          <h3>Ketua</h3>
+          <p>E. Theny Tampi</p>
         </div>
-        <!-- WhatsApp -->
-        <div class="col-md-3 col-sm-6 mx-auto">
-          <div class="contact-box">
-            <i class="fab fa-whatsapp"></i>
-            <h5>WhatsApp</h5>
-            <a href="https://wa.me/+6285186068917" target="_blank">+62 851 8606 8917</a>
+        <div class="team-member">
+          <div class="img-box">
+            <img src="images/s1.png" alt="Sekretaris" />
           </div>
+          <h3>Sekretaris</h3>
+          <p>Randi Mamola</p>
         </div>
-        <!-- Facebook -->
-        <div class="col-md-3 col-sm-6 mx-auto">
-          <div class="contact-box">
-            <i class="fab fa-facebook"></i>
-            <h5>Facebook</h5>
-            <a href="#" data-toggle="modal" data-target="#comingSoonModal">Your Facebook</a>
+        <div class="team-member">
+          <div class="img-box">
+            <img src="images/a1.png" alt="Bendahara" />
           </div>
-        </div>
-        <!-- Email -->
-        <div class="col-md-3 col-sm-6 mx-auto">
-          <div class="contact-box">
-            <i class="fas fa-envelope"></i>
-            <h5>Email</h5>
-            <a href="mailto:patuariminingniaga@gmail.com">patuariminingniaga@gmail.com</a>
-          </div>
+          <h3>Bendahara</h3>
+          <p>Muhammad Khaliq Mantiri</p>
         </div>
       </div>
-    </div>
   </section>
 
-  <!-- Modal Coming Soon -->
-  <div class="modal fade" id="comingSoonModal" tabindex="-1" aria-labelledby="comingSoonModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="comingSoonModalLabel">Info</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          Coming Soon!
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-        </div>
-      </div>
-    </div>
-  </div>
+  <!-- service section ends -->
 
   <!-- Footer Section -->
   <footer class="footer_section">
@@ -236,20 +176,23 @@
             <a href="https://html.design/">..</a>
         </p>
     </div>
-  </footer>
+</footer>
 
-  <!-- jQuery -->
+  <!-- jQery -->
   <script src="js/jquery-3.4.1.min.js"></script>
-  <!-- Popper JS -->
+  <!-- popper js -->
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <!-- Bootstrap JS -->
+  <!-- bootstrap js -->
   <script src="js/bootstrap.js"></script>
-  <!-- Owl Carousel -->
+  <!-- owl slider -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <!-- Nice Select -->
+  <!-- nice select -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
-  <!-- Custom JS -->
+  <!-- custom js -->
   <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+  <!-- End Google Map -->
 </body>
 
 </html>
