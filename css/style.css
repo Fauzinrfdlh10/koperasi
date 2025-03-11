@@ -1320,13 +1320,11 @@ footer .copyright p {
 
 /* Dropdown untuk Top Management */
 .dropdown-menu {
-  background-color: rgba(0, 0, 0, 0.8); /* Hitam transparan */
-  border: none;
+  background-color: rgba(110, 109, 109, 0.4); /* Memperjelas transparansi dengan mengubah nilai alpha */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Border putih tetap dengan transparansi */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Menambahkan efek bayangan yang lebih kuat */
 }
-.dropdown-item {
-  color: #fff !important;
-}
-.dropdown-item:hover {
-  background-color: #007bff; /* Warna biru saat hover */
-  color: #fff !important;
+
+.advisor-card {
+  border: 1px solid rgba(204, 204, 204, 0.4); /* Membuat border lebih transparan */
 }
