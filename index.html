@@ -238,31 +238,69 @@
         .footer_section a:hover {
             color: #0056b3;
         }
-
-        /* Gaya untuk section mitra */
+/* Gaya untuk section mitra dan bank */
 .mitra_section {
     padding: 60px 0;
     background-color: #f9f9f9; /* Warna latar belakang */
 }
 
-/* Gaya untuk logo mitra */
+/* Gaya untuk logo mitra dan bank */
 .mitra-logo {
-    max-width: 150px; /* Ukuran maksimum logo */
+    width: 200px; /* Ukuran default untuk logo mitra */
     height: auto;
-    margin: 20px 0;
+    margin: 20px;
     transition: transform 0.3s ease-in-out;
+}
+
+.bank-logo {
+    width: 250px; /* Ukuran lebih besar untuk logo bank */
 }
 
 .mitra-logo:hover {
     transform: scale(1.1); /* Efek zoom saat hover */
 }
 
+/* Container untuk logo mitra dan bank */
+.logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .mitra-logo {
-        max-width: 120px; /* Ukuran lebih kecil untuk layar mobile */
-        margin: 10px 0;
+        width: 150px; /* Ukuran lebih kecil untuk layar mobile */
+        margin: 10px;
     }
+    .bank-logo {
+        width: 200px; /* Ukuran lebih kecil untuk layar mobile */
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .mitra-logo {
+        width: 120px; /* Ukuran lebih kecil untuk layar mobile */
+        margin: 10px;
+    }
+}
+
+/* Gaya untuk dropdown bahasa */
+.navbar .dropdown-menu {
+    min-width: 120px;
+}
+
+.navbar .dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar .dropdown-item img {
+    width: 20px;
+    height: auto;
 }
     </style>
 </head>
@@ -283,52 +321,66 @@
                 </div>
             </div>  
         </div>
-        <!-- Navbar -->
-        <div class="header_bottom">
-            <div class="container-fluid">
-                <nav class="navbar navbar-expand-lg custom_nav-container">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="images/logo2.png" alt="Logo" style="height: 70px;">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Top Management
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="service.html">Pendiri Koperasi</a>
-                                    <a class="dropdown-item" href="advisor pengawas.html">Advisor Koperasi</a>
-                                    <a class="dropdown-item" href="legal koperasi.html">Legal Koperasi</a>
-                                    <a class="dropdown-item" href="dewan pengawas.html">Dewan Pengawas</a>
-                                    <a class="dropdown-item" href="anggota.html">Anggota Koperasi</a>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="team.html">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="portofolio.html">Portofolio</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+       <!-- Navbar -->
+<div class="header_bottom">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo2.png" alt="Logo" style="height: 70px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Top Management
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="service.html">Pendiri Koperasi</a>
+                            <a class="dropdown-item" href="advisor pengawas.html">Advisor Koperasi</a>
+                            <a class="dropdown-item" href="legal koperasi.html">Legal Koperasi</a>
+                            <a class="dropdown-item" href="dewan pengawas.html">Dewan Pengawas</a>
+                            <a class="dropdown-item" href="anggota.html">Anggota Koperasi</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portofolio.html">Portofolio</a>
+                    </li>
+                    <!-- Dropdown Bahasa -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="https://flagcdn.com/id.svg" alt="Indonesia" style="width: 20px; height: auto;"> Bahasa
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <a class="dropdown-item" href="#" data-lang="id">
+                                <img src="https://flagcdn.com/id.svg" alt="Indonesia" style="width: 20px; height: auto;"> Indonesia
+                            </a>
+                            <a class="dropdown-item" href="#" data-lang="en">
+                                <img src="https://flagcdn.com/gb.svg" alt="English" style="width: 20px; height: auto;"> English
+                            </a>
+                        </div>
+                    </li>
+                </ul>
             </div>
-        </div>
+        </nav>
+    </div>
+</div>
         <!-- Detail Box (Text and Logo) -->
         <div class="detail-box">
-            <h1 class="animated-font">Koperasi Energi <br> Pertambangan, Perdagangan</h1>
-            <p class="animated-font">Ayo Bermitra Bersama Kami. Untuk Menjadi Anggota Koperasi Menuju Perubahan</p>
-            <p># Indonesia Emas #</p>
+            <h1 id="heading">Koperasi Energi <br> Pertambangan, Perdagangan</h1>
+            <p id="subheading">Ayo Bermitra Bersama Kami. Untuk Menjadi Anggota Koperasi Menuju Perubahan</p>
+            <p id="tagline"># Indonesia Emas #</p>
         </div>
     </div>
 
@@ -336,19 +388,21 @@
     <section class="service_section layout_padding">
         <div class="container">
             <div class="heading_container heading_center">
-                <h2 class="">
+                <h2 id="sectionTitle">
                     Koperasi Patuari Mining Niaga penggerak perekonomian rakyat.
                 </h2>
-                <p class="col-lg-8 px-0">
+                <p id="sectionDescription" class="col-lg-8 px-0">
                     Digitalisasi Koperasi Patuari Mining Niaga mulai melakukan transformasi digital secara bertahap. 
                     Hadir untuk membantu kesejahteraan masyarakat di sekitar dan terus berupaya berinovasi dalam pengembangan koperasi yang lebih modern.
                 </p>
-                <p>Patuari Mining Niaga Adalah Koperasi Produsen Energi Terbarukan, Pertambangan, Perdagangan  yang Mengubah Paradigma Di Indonesia Yang Menerapkan  "Eco-friendly" Atau Ramah Lingkungan  Yang Inovatif. 
+                <p id="sectionContent">
+                    Patuari Mining Niaga Adalah Koperasi Produsen Energi Terbarukan, Pertambangan, Perdagangan  yang Mengubah Paradigma Di Indonesia Yang Menerapkan  "Eco-friendly" Atau Ramah Lingkungan  Yang Inovatif. 
                     bertujuan untuk mewujudkan cita-cita pada Pasal 33 ayat (3) Undang-Undang Dasar (UUD) 1945. Pasal tersebut menjelaskan bahwa bumi, air, dan kekayaan alam yang berada di dalamnya dikuasai oleh negara dan dimanfaatkan untuk kesejahteraan rakyat.
                     Serta Konsep Rantai Pasok Dalam Dunia Perdagangan Sub-Sektor Mikro ,UMKM, Makro. Dalam Rangka Mendukung Program - Program Pemerintah Sulut Dalam Upaya Meningkatkan 
-                    Kesejahteraan Masyarakat Luas Dan Tunas - Tunas Bangsa Indonesia. </p>
-                    <p># Indonesia Emas #</p>
-        <p> " Your Trade Solution "</p>
+                    Kesejahteraan Masyarakat Luas Dan Tunas - Tunas Bangsa Indonesia. 
+                </p>
+                <p id="sectionTagline"># Indonesia Emas #</p>
+                <p id="sectionSolution">" Your Trade Solution "</p>
             </div>
         </div>
     </section>
@@ -357,8 +411,8 @@
 <section class="team_section layout_padding">
   <div class="container">
       <div class="heading_container heading_center">
-          <h2 class="animated-font">Sumber Daya Manusia</h2>
-          <p> Didukung oleh IATPI</p>
+          <h2 id="teamTitle" class="animated-font">Sumber Daya Manusia</h2>
+          <p id="teamSubtitle"> Didukung oleh IATPI</p>
       </div>
       <div class="row">
           <div class="col-md-4 col-sm-6 mx-auto">
@@ -402,7 +456,7 @@
 <section class="mitra_section layout_padding">
     <div class="container">
         <div class="heading_container heading_center">
-            <h2 class="">Mitra Kami</h2>
+            <h2 id="mitraTitle">Mitra Kami</h2>
         </div>
         <div class="logo-container">
             <div class="row justify-content-center">
@@ -416,7 +470,32 @@
                     <img src="images/iatpi.png" alt="Mitra 3" class="img-fluid mitra-logo">
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <img src="images/logo-mitra4.png" alt="Mitra 4" class="img-fluid mitra-logo">
+                    <img src="images/itb.png" alt="Mitra 4" class="img-fluid mitra-logo">
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="images/siloam.jpeg" alt="Mitra 5" class="img-fluid mitra-logo">
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="images/komando.jpg" alt="Mitra 6" class="img-fluid mitra-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section Bank -->
+<section class="mitra_section layout_padding">
+    <div class="container">
+        <div class="heading_container heading_center">
+            <h2 id="bankTitle">Bank</h2>
+        </div>
+        <div class="logo-container">
+            <div class="row justify-content-center">
+                <div class="col-md-3 col-sm-6">
+                    <img src="images/bank-sulut.jpg" alt="Bank 1" class="img-fluid mitra-logo bank-logo">
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="images/bca.jpeg" alt="Bank 2" class="img-fluid mitra-logo bank-logo">
                 </div>
             </div>
         </div>
@@ -426,7 +505,7 @@
     <!-- Footer Section -->
     <footer class="footer_section">
         <div class="container">
-            <p>
+            <p id="footerText">
                 &copy; <span id="displayYear"></span> All Rights Reserved By Patuari Mining Niaga
             </p>
         </div>
@@ -465,6 +544,78 @@
         // Observe elements that should animate on scroll
         document.querySelectorAll('.fade-in, .slide-up, .zoom-in, .animated-font, .animated-image, .logo-image').forEach(element => {
             observer.observe(element);
+        });
+    </script>
+
+    <script>
+        // Data konten dalam dua bahasa
+        const content = {
+            id: {
+                heading: "Koperasi Energi <br> Pertambangan, Perdagangan",
+                subheading: "Ayo Bermitra Bersama Kami. Untuk Menjadi Anggota Koperasi Menuju Perubahan",
+                tagline: "# Indonesia Emas #",
+                sectionTitle: "Koperasi Patuari Mining Niaga penggerak perekonomian rakyat.",
+                sectionDescription: "Digitalisasi Koperasi Patuari Mining Niaga mulai melakukan transformasi digital secara bertahap. Hadir untuk membantu kesejahteraan masyarakat di sekitar dan terus berupaya berinovasi dalam pengembangan koperasi yang lebih modern.",
+                sectionContent: "Patuari Mining Niaga Adalah Koperasi Produsen Energi Terbarukan, Pertambangan, Perdagangan yang Mengubah Paradigma Di Indonesia Yang Menerapkan 'Eco-friendly' Atau Ramah Lingkungan Yang Inovatif. Bertujuan untuk mewujudkan cita-cita pada Pasal 33 ayat (3) Undang-Undang Dasar (UUD) 1945. Pasal tersebut menjelaskan bahwa bumi, air, dan kekayaan alam yang berada di dalamnya dikuasai oleh negara dan dimanfaatkan untuk kesejahteraan rakyat. Serta Konsep Rantai Pasok Dalam Dunia Perdagangan Sub-Sektor Mikro, UMKM, Makro. Dalam Rangka Mendukung Program - Program Pemerintah Sulut Dalam Upaya Meningkatkan Kesejahteraan Masyarakat Luas Dan Tunas - Tunas Bangsa Indonesia.",
+                sectionTagline: "# Indonesia Emas #",
+                sectionSolution: '" Your Trade Solution "',
+                teamTitle: "Sumber Daya Manusia",
+                teamSubtitle: "Didukung oleh IATPI",
+                mitraTitle: "Mitra Kami",
+                bankTitle: "Bank",
+                footerText: "&copy; <span id='displayYear'></span> All Rights Reserved By Patuari Mining Niaga"
+            },
+            en: {
+                heading: "Energy Cooperative <br> Mining, Trade",
+                subheading: "Let's Partner With Us. To Become a Cooperative Member Towards Change",
+                tagline: "# Golden Indonesia #",
+                sectionTitle: "Patuari Mining Niaga Cooperative, the Driver of People's Economy.",
+                sectionDescription: "The digitalization of Patuari Mining Niaga Cooperative is gradually undergoing digital transformation. Present to help the welfare of the surrounding community and continue to strive for innovation in the development of a more modern cooperative.",
+                sectionContent: "Patuari Mining Niaga is a Cooperative Producer of Renewable Energy, Mining, and Trade that Changes the Paradigm in Indonesia by Applying 'Eco-friendly' or Environmentally Friendly and Innovative. Aiming to realize the ideals of Article 33 paragraph (3) of the 1945 Constitution. The article explains that the earth, water, and natural resources contained therein are controlled by the state and used for the welfare of the people. As well as the Supply Chain Concept in the World of Trade in the Micro, MSME, and Macro Sub-Sectors. In Order to Support the Programs of the North Sulawesi Government in Efforts to Improve the Welfare of the Wider Community and the Young Generation of Indonesia.",
+                sectionTagline: "# Golden Indonesia #",
+                sectionSolution: '" Your Trade Solution "',
+                teamTitle: "Human Resources",
+                teamSubtitle: "Supported by IATPI",
+                mitraTitle: "Our Partners",
+                bankTitle: "Bank",
+                footerText: "&copy; <span id='displayYear'></span> All Rights Reserved By Patuari Mining Niaga"
+            }
+        };
+
+        // Fungsi untuk mengubah bahasa
+        function changeLanguage(lang) {
+            // Ambil elemen yang perlu diubah
+            document.getElementById("heading").innerHTML = content[lang].heading;
+            document.getElementById("subheading").textContent = content[lang].subheading;
+            document.getElementById("tagline").textContent = content[lang].tagline;
+            document.getElementById("sectionTitle").textContent = content[lang].sectionTitle;
+            document.getElementById("sectionDescription").textContent = content[lang].sectionDescription;
+            document.getElementById("sectionContent").textContent = content[lang].sectionContent;
+            document.getElementById("sectionTagline").textContent = content[lang].sectionTagline;
+            document.getElementById("sectionSolution").textContent = content[lang].sectionSolution;
+            document.getElementById("teamTitle").textContent = content[lang].teamTitle;
+            document.getElementById("teamSubtitle").textContent = content[lang].teamSubtitle;
+            document.getElementById("mitraTitle").textContent = content[lang].mitraTitle;
+            document.getElementById("bankTitle").textContent = content[lang].bankTitle;
+            document.getElementById("footerText").innerHTML = content[lang].footerText;
+
+            // Simpan preferensi bahasa ke localStorage
+            localStorage.setItem("language", lang);
+        }
+
+        // Event listener untuk dropdown bahasa
+        document.querySelectorAll('.dropdown-item[data-lang]').forEach(item => {
+            item.addEventListener('click', function (e) {
+                e.preventDefault();
+                const lang = this.getAttribute('data-lang');
+                changeLanguage(lang);
+            });
+        });
+
+        // Set bahasa awal saat halaman dimuat
+        document.addEventListener("DOMContentLoaded", function () {
+            const savedLang = localStorage.getItem("language") || "id"; // Default bahasa Indonesia
+            changeLanguage(savedLang);
         });
     </script>
 </body>
