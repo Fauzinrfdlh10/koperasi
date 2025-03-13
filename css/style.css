@@ -1328,3 +1328,18 @@ footer .copyright p {
 .advisor-card {
   border: 1px solid rgba(204, 204, 204, 0.4); /* Membuat border lebih transparan */
 }
+.navbar-nav .nav-link {
+  color: #ffffff; /* Warna teks */
+  text-transform: uppercase; /* Huruf kapital */
+  padding: 5px 10px; /* Mengurangi padding horizontal */
+  margin: 0 5px; /* Mengurangi margin antara item */
+  font-size: 14px; /* Ukuran font */
+}
+
+.navbar-nav .nav-item {
+  margin: 0; /* Menghapus margin default */
+}
+
+.navbar-nav {
+  gap: 5px; /* Jarak antara item navbar */
+}

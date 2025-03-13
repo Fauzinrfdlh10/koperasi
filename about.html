@@ -30,19 +30,53 @@
   <link href="css/responsive.css" rel="stylesheet" />
 
   <style>
+    /* Penyesuaian font dan spasi */
+    body {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      margin: 0 0 20px 0;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    p {
+      margin: 0 0 15px 0;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    ol, ul {
+      margin: 0 0 15px 0;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
     /* Navbar dengan warna hitam transparan */
     .header_bottom {
       background-color: rgba(0, 0, 0, 0.7); /* Hitam transparan */
       padding: 10px 0;
     }
+
     .navbar-nav .nav-link {
       color: #fff !important; /* Warna teks putih */
       font-weight: 600;
       margin: 0 10px;
     }
+
     .navbar-nav .nav-link:hover {
       color: #007bff !important; /* Warna teks biru saat hover */
     }
+
     .navbar-brand img {
       height: 70px;
     }
@@ -121,6 +155,87 @@
 
     ol li {
       margin-bottom: 10px; /* Jarak antar item */
+    }
+
+    /* Penyesuaian untuk mobile */
+    @media (max-width: 768px) {
+      body {
+        font-size: 14px;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        font-size: 1.5em;
+      }
+
+      p {
+        font-size: 0.9em;
+      }
+
+      ol, ul {
+        padding-left: 15px;
+      }
+
+      .navbar-nav .nav-link {
+        margin: 5px 0;
+      }
+
+      .navbar-brand img {
+        height: 50px;
+      }
+
+      .section {
+        margin: 20px 0;
+        padding: 20px 0;
+      }
+
+      .heading_container h2 {
+        font-size: 1.5em;
+      }
+
+      .heading_container h4 {
+        font-size: 1.2em;
+      }
+    }
+
+    /* Penyesuaian footer */
+    .footer_section {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .footer_section p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .footer_section p {
+        font-size: 12px;
+      }
+    }
+
+    /* Penyesuaian dropdown bahasa */
+    .nav-item.dropdown .dropdown-menu {
+      background-color: rgba(0, 0, 0, 0.7);
+      border: none;
+    }
+
+    .nav-item.dropdown .dropdown-item {
+      color: #fff !important;
+      font-weight: 600;
+    }
+
+    .nav-item.dropdown .dropdown-item:hover {
+      background-color: #007bff;
+      color: #fff !important;
+    }
+
+    @media (max-width: 768px) {
+      .nav-item.dropdown .dropdown-menu {
+        background-color: #333;
+      }
     }
   </style>
 </head>
@@ -213,7 +328,7 @@
       </div>
       <p id="riwayatDescription1" class="justify-text">Perjalanan awal tentang riwayat singkat kelahiran Koperasi Energi Pertambangan, Perdagangan. Patuari Mining Niaga.</p>
       <p id="riwayatDescription2" class="justify-text">Patuari Mining Niaga merupakan koperasi yang bergerak dalam unit usaha pertambangan bijih logam emas dan perak, energi terbarukan, pemurnian air, treatment limbah WTP, STP, IPAL, serta jasa perdagangan. Koperasi ini didirikan pada Jumat, 7 Februari 2025.</p>
-      <p id="riwayatDescription3" class="justify-text">Koperasi Patuari Mining Niaga mengolah bijih logam dengan metode heap leaching cyanida + GDA (gold dressing agent). Transformasi tahun 2025 dilakukan oleh E. Theny Tampi, Randi Mamola, dan Kholiq Mantiri yang sepakat mendirikan koperasi dengan metode pertambangan hydrometallurgy dan pyrometallurgy yang ramah lingkungan.</p>
+      <p id="riwayatDescription3" class="justify-text"> Koperasi Patuari Mining Niaga mengolah bijih logam dengan metode heap leaching Jinchan Metalic Ore Dressing Agent (Environmental-Friendly Gold extraction) dan Cyanida + GDA (Gold Dressing Agent). Transformasi tahun 2025 dilakukan oleh E. Theny Tampi, Randi Mamola, dan Khaliq Mantiri yang sepakat mendirikan koperasi dengan metode pertambangan hydrometallurgy dan pyrometallurgy yang ramah lingkungan.</p>
     </div>
   </div>
 
@@ -237,6 +352,16 @@
           <li>Mengambil tindakan yang tegas terhadap pelanggaran etika bisnis.</li>
         </ol>
       </div>
+      <div class="sistem-etika">
+        <h4 id="manfaatEtikaTitle">Manfaat Menegakkan Etika Bisnis:</h4>
+        <ol id="manfaatEtikaList" class="justify-text">
+          <li>Membangun kepercayaan dengan stakeholder, pemangku kepentingan, pelanggan mitra koperasi, anggota koperasi, dan masyarakat umumnya.</li>
+          <li>Mengurangi risiko pelanggaran hukum dan kerugian finansial.</li>
+          <li>Meningkatkan produktivitas anggota koperasi dan memperbaiki kualitas kinerja anggota koperasi dan mitra koperasi.</li>
+          <li>Mendorong kami untuk mengambil peran untuk berkontribusi ke Negara dan masyarakat.</li>
+          <li>Berpegang pada tanggung jawab adalah wilayah tertinggi dalam pemikiran. Memiliki rasa bertanggung jawab adalah sifat terbaik; karena memberi keberanian, energi, dan kebijaksanaan.</li>
+        </ol>
+      </div>
     </div>
   </div>
 
@@ -247,7 +372,7 @@
         <h2 id="domisiliTitle">Domisili Koperasi</h2>
       </div>
       <ul id="domisiliList" class="list-unstyled">
-        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Jl. Sam Ratulangi No.458. Sarang Inovasi Indonesia Building Lt. 3 Ranotana,Kec. Sario, Kota Manado,Sulawesi Utara 95116.</li>
+        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Jl. Sam Ratulangi No.458. Sarang Inovasi Indonesia Building Lt. 3 Ranotana, Kec. Sario, Kota Manado, Sulawesi Utara 95116.</li>
         <li><i class="fa fa-phone" aria-hidden="true"></i> Tlp 085186068917</li>
         <li><i class="fa fa-envelope" aria-hidden="true"></i> Email : patuariminingniaga@gmail.com</li>
       </ul>
@@ -284,7 +409,7 @@
         riwayatTitle: "Riwayat Koperasi",
         riwayatDescription1: "Perjalanan awal tentang riwayat singkat kelahiran Koperasi Energi Pertambangan, Perdagangan. Patuari Mining Niaga.",
         riwayatDescription2: "Patuari Mining Niaga merupakan koperasi yang bergerak dalam unit usaha pertambangan bijih logam emas dan perak, energi terbarukan, pemurnian air, treatment limbah WTP, STP, IPAL, serta jasa perdagangan. Koperasi ini didirikan pada Jumat, 7 Februari 2025.",
-        riwayatDescription3: "Koperasi Patuari Mining Niaga mengolah bijih logam dengan metode heap leaching cyanida + GDA (gold dressing agent). Transformasi tahun 2025 dilakukan oleh E. Theny Tampi, Randi Mamola, dan Kholiq Mantiri yang sepakat mendirikan koperasi dengan metode pertambangan hydrometallurgy dan pyrometallurgy yang ramah lingkungan.",
+        riwayatDescription3: "Koperasi Patuari Mining Niaga mengolah bijih logam dengan metode heap leaching Jinchan Metalic Ore Dressing Agent (Environmental-Friendly Gold extraction) dan Cyanida + GDA (Gold Dressing Agent). Transformasi tahun 2025 dilakukan oleh E. Theny Tampi, Randi Mamola, dan Khaliq Mantiri yang sepakat mendirikan koperasi dengan metode pertambangan hydrometallurgy dan pyrometallurgy yang ramah lingkungan.",
         etikaTitle: "Menegakkan Etika Bisnis Yang Tinggi dan Pertanggung Jawaban",
         etikaPrinsip: "Prinsip Etika Bisnis",
         etikaDescription: "Menjunjung tinggi integritas, moralitas, dan tanggung jawab dalam semua aspek bisnis dalam wirausaha.",
@@ -296,9 +421,17 @@
           "Menghargai whistleblower yang melaporkan pelanggaran etika bisnis.",
           "Mengambil tindakan yang tegas terhadap pelanggaran etika bisnis."
         ],
+        manfaatEtikaTitle: "Manfaat Menegakkan Etika Bisnis:",
+        manfaatEtikaList: [
+          "Membangun kepercayaan dengan stakeholder, pemangku kepentingan, pelanggan mitra koperasi, anggota koperasi, dan masyarakat umumnya.",
+          "Mengurangi risiko pelanggaran hukum dan kerugian finansial.",
+          "Meningkatkan produktivitas anggota koperasi dan memperbaiki kualitas kinerja anggota koperasi dan mitra koperasi.",
+          "Mendorong kami untuk mengambil peran untuk berkontribusi ke Negara dan masyarakat.",
+          "Berpegang pada tanggung jawab adalah wilayah tertinggi dalam pemikiran. Memiliki rasa bertanggung jawab adalah sifat terbaik; karena memberi keberanian, energi, dan kebijaksanaan."
+        ],
         domisiliTitle: "Domisili Koperasi",
         domisiliList: [
-          "<i class='fa fa-map-marker' aria-hidden='true'></i> Jl. Sam Ratulangi No.458. Sarang Inovasi Indonesia Building Lt. 3 Ranotana,Kec. Sario, Kota Manado,Sulawesi Utara 95116.",
+          "<i class='fa fa-map-marker' aria-hidden='true'></i> Jl. Sam Ratulangi No.458. Sarang Inovasi Indonesia Building Lt. 3 Ranotana, Kec. Sario, Kota Manado, Sulawesi Utara 95116.",
           "<i class='fa fa-phone' aria-hidden='true'></i> Tlp 085186068917",
           "<i class='fa fa-envelope' aria-hidden='true'></i> Email : patuariminingniaga@gmail.com"
         ],
@@ -317,7 +450,7 @@
         riwayatTitle: "Company History",
         riwayatDescription1: "The early journey of the brief history of the birth of the Energy, Mining, and Trade Cooperative. Patuari Mining Niaga.",
         riwayatDescription2: "Patuari Mining Niaga is a cooperative engaged in the business units of gold and silver ore mining, renewable energy, water purification, WTP, STP, WWTP waste treatment, and trading services. This cooperative was established on Friday, February 7, 2025.",
-        riwayatDescription3: "Patuari Mining Niaga Cooperative processes metal ores using the heap leaching cyanide + GDA (gold dressing agent) method. The transformation in 2025 was carried out by E. Theny Tampi, Randi Mamola, and Kholiq Mantiri, who agreed to establish a cooperative with environmentally friendly hydrometallurgy and pyrometallurgy mining methods.",
+        riwayatDescription3: "Patuari Mining Niaga Cooperative processes metal ores using the heap leaching Jinchan Metalic Ore Dressing Agent (Environmental-Friendly Gold extraction) and Cyanida + GDA (Gold Dressing Agent) methods. The transformation in 2025 was carried out by E. Theny Tampi, Randi Mamola, and Khaliq Mantiri, who agreed to establish a cooperative with environmentally friendly hydrometallurgy and pyrometallurgy mining methods.",
         etikaTitle: "Upholding High Business Ethics and Responsibility",
         etikaPrinsip: "Business Ethics Principles",
         etikaDescription: "Upholding integrity, morality, and responsibility in all aspects of business in entrepreneurship.",
@@ -329,9 +462,17 @@
           "Appreciating whistleblowers who report ethical violations.",
           "Taking firm action against ethical violations."
         ],
+        manfaatEtikaTitle: "Benefits of Upholding Business Ethics:",
+        manfaatEtikaList: [
+          "Building trust with stakeholders, customers, cooperative partners, members, and the general public.",
+          "Reducing the risk of legal violations and financial losses.",
+          "Increasing the productivity of cooperative members and improving the performance quality of members and partners.",
+          "Encouraging us to take a role in contributing to the nation and society.",
+          "Holding onto responsibility is the highest realm of thought. Having a sense of responsibility is the best trait; it gives courage, energy, and wisdom."
+        ],
         domisiliTitle: "Cooperative Domicile",
         domisiliList: [
-          "<i class='fa fa-map-marker' aria-hidden='true'></i> Jl. Sam Ratulangi No.458. Sarang Inovasi Indonesia Building Lt. 3 Ranotana,Kec. Sario, Kota Manado,Sulawesi Utara 95116.",
+          "<i class='fa fa-map-marker' aria-hidden='true'></i> Jl. Sam Ratulangi No.458. Sarang Inovasi Indonesia Building Lt. 3 Ranotana, Kec. Sario, Kota Manado, Sulawesi Utara 95116.",
           "<i class='fa fa-phone' aria-hidden='true'></i> Phone 085186068917",
           "<i class='fa fa-envelope' aria-hidden='true'></i> Email : patuariminingniaga@gmail.com"
         ],
@@ -354,6 +495,8 @@
       document.getElementById("etikaDescription").textContent = content[lang].etikaDescription;
       document.getElementById("sistemEtikaTitle").textContent = content[lang].sistemEtikaTitle;
       document.getElementById("sistemEtikaList").innerHTML = content[lang].sistemEtikaList.map(item => `<li>${item}</li>`).join("");
+      document.getElementById("manfaatEtikaTitle").textContent = content[lang].manfaatEtikaTitle;
+      document.getElementById("manfaatEtikaList").innerHTML = content[lang].manfaatEtikaList.map(item => `<li>${item}</li>`).join("");
       document.getElementById("domisiliTitle").textContent = content[lang].domisiliTitle;
       document.getElementById("domisiliList").innerHTML = content[lang].domisiliList.join("");
       document.getElementById("footerText").innerHTML = content[lang].footerText;

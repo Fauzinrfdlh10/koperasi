@@ -16,38 +16,46 @@
   <link href="css/style.css" rel="stylesheet" />
   <link href="css/responsive.css" rel="stylesheet" />
   <style>
-    .coming-soon {
+    .documentation-section {
+      padding: 60px 0;
+      background-color: #f9f9f9;
+    }
+
+    .documentation-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .documentation-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .documentation-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .documentation-card .card-body {
+      padding: 20px;
       text-align: center;
-      font-size: 32px;
-      font-weight: bold;
-      padding: 100px 0;
-      color: #333;
-      background: linear-gradient(45deg, #000000, #f0f0f0);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: fadeIn 2s ease-in-out;
     }
 
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
+    .documentation-card h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
     }
 
-    @media (max-width: 768px) {
-      .coming-soon {
-        font-size: 24px;
-        padding: 50px 0;
-      }
-      .navbar-nav {
-        text-align: center;
-      }
-      .navbar-nav .nav-item {
-        margin-bottom: 10px;
-      }
+    .documentation-card p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 15px;
     }
 
     .footer_section {
@@ -55,8 +63,7 @@
       color: #fff;
       text-align: center;
       padding: 20px 0;
-      position: absolute;
-      bottom: 0;
+      position: relative;
       width: 100%;
     }
 
@@ -65,33 +72,25 @@
       font-size: 16px;
     }
 
-    /* Responsif untuk layar kecil */
     @media (max-width: 768px) {
+      .documentation-card img {
+        height: 150px;
+      }
+
+      .documentation-card h3 {
+        font-size: 18px;
+      }
+
+      .documentation-card p {
+        font-size: 12px;
+      }
+
       .footer_section {
         padding: 15px 10px;
       }
+
       .footer_section p {
         font-size: 14px;
-      }
-    }
-
-    /* Responsif untuk layar sangat kecil */
-    @media (max-width: 480px) {
-      .footer_section {
-        padding: 10px 5px;
-      }
-      .footer_section p {
-        font-size: 12px;
-      }
-    }
-
-    /* Responsif untuk layar tablet */
-    @media (min-width: 768px) and (max-width: 1024px) {
-      .footer_section {
-        padding: 20px 20px;
-      }
-      .footer_section p {
-        font-size: 16px;
       }
     }
   </style>
@@ -159,9 +158,38 @@
     </div>
   </div>
 
-  <section class="service_section layout_padding">
+  <!-- Dokumentasi Section -->
+  <section class="documentation-section">
     <div class="container">
-      <div class="coming-soon" id="comingSoonText">Coming Soon...</div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="documentation-card">
+            <img src="images/doc1.jpg" alt="Dokumentasi 1">
+            <div class="card-body">
+              <h3 id="doc1Title">Pelatihan Koperasi</h3>
+              <p id="doc1Desc">Kegiatan pelatihan untuk meningkatkan kapasitas anggota koperasi.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="documentation-card">
+            <img src="images/doc2.jpg" alt="Dokumentasi 2">
+            <div class="card-body">
+              <h3 id="doc2Title">Kunjungan Lapangan</h3>
+              <p id="doc2Desc">Kunjungan lapangan untuk memantau perkembangan proyek koperasi.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="documentation-card">
+            <img src="images/doc3.jpg" alt="Dokumentasi 3">
+            <div class="card-body">
+              <h3 id="doc3Title">Rapat Rutin</h3>
+              <p id="doc3Desc">Rapat rutin untuk membahas perkembangan dan rencana koperasi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -185,18 +213,34 @@
     // Data konten dalam dua bahasa
     const content = {
       id: {
-        comingSoonText: "Segera Hadir...",
+        doc1Title: "Pelatihan Koperasi",
+        doc1Desc: "Kegiatan pelatihan untuk meningkatkan kapasitas anggota koperasi.",
+        doc2Title: "Kunjungan Lapangan",
+        doc2Desc: "Kunjungan lapangan untuk memantau perkembangan proyek koperasi.",
+        doc3Title: "Rapat Rutin",
+        doc3Desc: "Rapat rutin untuk membahas perkembangan dan rencana koperasi.",
         footerText: "&copy; <span id='displayYear'></span> Hak Cipta Dilindungi Oleh Patuari Mining Niaga"
       },
       en: {
-        comingSoonText: "Coming Soon...",
+        doc1Title: "Cooperative Training",
+        doc1Desc: "Training activities to enhance the capacity of cooperative members.",
+        doc2Title: "Field Visit",
+        doc2Desc: "Field visits to monitor the progress of cooperative projects.",
+        doc3Title: "Regular Meeting",
+        doc3Desc: "Regular meetings to discuss cooperative developments and plans.",
         footerText: "&copy; <span id='displayYear'></span> All Rights Reserved By Patuari Mining Niaga"
       }
     };
 
     // Fungsi untuk mengubah bahasa
     function changeLanguage(lang) {
-      document.getElementById("comingSoonText").textContent = content[lang].comingSoonText;
+      // Update konten dokumentasi
+      document.getElementById("doc1Title").textContent = content[lang].doc1Title;
+      document.getElementById("doc1Desc").textContent = content[lang].doc1Desc;
+      document.getElementById("doc2Title").textContent = content[lang].doc2Title;
+      document.getElementById("doc2Desc").textContent = content[lang].doc2Desc;
+      document.getElementById("doc3Title").textContent = content[lang].doc3Title;
+      document.getElementById("doc3Desc").textContent = content[lang].doc3Desc;
       document.getElementById("footerText").innerHTML = content[lang].footerText;
 
       // Simpan preferensi bahasa ke localStorage
@@ -217,6 +261,9 @@
       const savedLang = localStorage.getItem("language") || "id"; // Default bahasa Indonesia
       changeLanguage(savedLang);
     });
+
+    // Set current year in the footer
+    document.getElementById('displayYear').textContent = new Date().getFullYear();
   </script>
 </body>
 
