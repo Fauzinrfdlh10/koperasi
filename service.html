@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <!-- Basic -->
@@ -112,13 +112,27 @@
                   <a class="dropdown-item" href="legal koperasi.html">Legal Koperasi</a>
                   <a class="dropdown-item" href="dewan pengawas.html">Dewan Pengawas</a>
                   <a class="dropdown-item" href="anggota.html">Anggota Koperasi</a>
-              </div>
+                </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="team.html">Contact</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="portofolio.html">Portofolio</a>
+              </li>
+              <!-- Dropdown Bahasa -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="https://flagcdn.com/id.svg" alt="Indonesia" style="width: 20px; height: auto;"> Bahasa
+                </a>
+                <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                  <a class="dropdown-item" href="#" data-lang="id">
+                    <img src="https://flagcdn.com/id.svg" alt="Indonesia" style="width: 20px; height: auto;"> Indonesia
+                  </a>
+                  <a class="dropdown-item" href="#" data-lang="en">
+                    <img src="https://flagcdn.com/gb.svg" alt="English" style="width: 20px; height: auto;"> English
+                  </a>
+                </div>
               </li>
             </ul>
           </div>
@@ -128,14 +142,13 @@
   </div>
 
   <!-- service section -->
-
   <section class="service_section layout_padding">
     <div class="container">
-      <div class="heading_container heading_center ">
-        <h2 class="">
+      <div class="heading_container heading_center">
+        <h2 id="sectionTitle">
           STRUKTUR KOPERASI <br> PATUARI MINING NIAGA
-        </h2> 
-        <p class="col-lg-8 px-0">
+        </h2>
+        <p id="sectionDescription" class="col-lg-8 px-0">
           PENDIRI KOPERASI
         </p>
       </div>
@@ -146,36 +159,35 @@
           <div class="img-box">
             <img src="images/a2.png" alt="Ketua" />
           </div>
-          <h3>Ketua</h3>
+          <h3 id="position1">Ketua</h3>
           <p>E. Theny Tampi</p>
         </div>
         <div class="team-member">
           <div class="img-box">
             <img src="images/3.png" alt="Sekretaris" />
           </div>
-          <h3>Sekretaris</h3>
+          <h3 id="position2">Sekretaris</h3>
           <p>Randi Mamola</p>
         </div>
         <div class="team-member">
           <div class="img-box">
             <img src="images/a1.png" alt="Bendahara" />
           </div>
-          <h3>Bendahara</h3>
+          <h3 id="position3">Bendahara</h3>
           <p>Muhammad Khaliq Mantiri</p>
         </div>
       </div>
+    </div>
   </section>
-
-  <!-- service section ends -->
 
   <!-- Footer Section -->
   <footer class="footer_section">
     <div class="container">
-        <p>
-          &copy; <span id="displayYear"></span> All Rights Reserved By Patuari Mining Niaga
-        </p>
+      <p id="footerText">
+        &copy; <span id="displayYear"></span> All Rights Reserved By Patuari Mining Niaga
+      </p>
     </div>
-</footer>
+  </footer>
 
   <!-- jQery -->
   <script src="js/jquery-3.4.1.min.js"></script>
@@ -192,6 +204,56 @@
   <!-- Google Map -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
   <!-- End Google Map -->
+
+  <script>
+    // Data konten dalam dua bahasa
+    const content = {
+      id: {
+        sectionTitle: "STRUKTUR KOPERASI <br> PATUARI MINING NIAGA",
+        sectionDescription: "PENDIRI KOPERASI",
+        position1: "Ketua",
+        position2: "Sekretaris",
+        position3: "Bendahara",
+        footerText: "&copy; <span id='displayYear'></span> All Rights Reserved By Patuari Mining Niaga"
+      },
+      en: {
+        sectionTitle: "STRUCTURE OF <br> PATUARI MINING NIAGA COOPERATIVE",
+        sectionDescription: "COOPERATIVE FOUNDERS",
+        position1: "Chairman",
+        position2: "Secretary",
+        position3: "Treasurer",
+        footerText: "&copy; <span id='displayYear'></span> All Rights Reserved By Patuari Mining Niaga"
+      }
+    };
+
+    // Fungsi untuk mengubah bahasa
+    function changeLanguage(lang) {
+      document.getElementById("sectionTitle").innerHTML = content[lang].sectionTitle;
+      document.getElementById("sectionDescription").textContent = content[lang].sectionDescription;
+      document.getElementById("position1").textContent = content[lang].position1;
+      document.getElementById("position2").textContent = content[lang].position2;
+      document.getElementById("position3").textContent = content[lang].position3;
+      document.getElementById("footerText").innerHTML = content[lang].footerText;
+
+      // Simpan preferensi bahasa ke localStorage
+      localStorage.setItem("language", lang);
+    }
+
+    // Event listener untuk dropdown bahasa
+    document.querySelectorAll('.dropdown-item[data-lang]').forEach(item => {
+      item.addEventListener('click', function (e) {
+        e.preventDefault();
+        const lang = this.getAttribute('data-lang');
+        changeLanguage(lang);
+      });
+    });
+
+    // Set bahasa awal saat halaman dimuat
+    document.addEventListener("DOMContentLoaded", function () {
+      const savedLang = localStorage.getItem("language") || "id"; // Default bahasa Indonesia
+      changeLanguage(savedLang);
+    });
+  </script>
 </body>
 
 </html>
