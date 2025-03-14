@@ -33,52 +33,63 @@
     /* Penyesuaian font dan spasi */
     body {
       font-family: 'Montserrat', sans-serif;
-      font-size: 16px;
-      line-height: 1.6;
+      font-size: 14px;
+      line-height: 1.5;
       color: #333;
       margin: 0;
       padding: 0;
     }
 
     h1, h2, h3, h4, h5, h6 {
-      margin: 0 0 20px 0;
+      margin: 0 0 15px 0;
       font-weight: 700;
       line-height: 1.2;
     }
 
+    h1 { font-size: 24px; }
+    h2 { font-size: 20px; }
+    h3 { font-size: 18px; }
+    h4 { font-size: 16px; }
+    h5 { font-size: 14px; }
+    h6 { font-size: 12px; }
+
     p {
-      margin: 0 0 15px 0;
+      margin: 0 0 10px 0;
+      font-size: 14px;
       text-align: justify;
       text-justify: inter-word;
     }
 
     ol, ul {
-      margin: 0 0 15px 0;
+      margin: 0 0 10px 0;
       padding-left: 20px;
     }
 
     li {
-      margin-bottom: 10px;
+      margin-bottom: 8px;
+      font-size: 14px;
     }
 
     /* Navbar dengan warna hitam transparan */
     .header_bottom {
-      background-color: rgba(0, 0, 0, 0.7); /* Hitam transparan */
-      padding: 10px 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 8px 0;
     }
 
     .navbar-nav .nav-link {
-      color: #fff !important; /* Warna teks putih */
+      color: #fff !important;
       font-weight: 600;
-      margin: 0 10px;
+      margin: 0 5px;
+      padding: 6px 10px;
+      font-size: 14px;
     }
 
     .navbar-nav .nav-link:hover {
-      color: #007bff !important; /* Warna teks biru saat hover */
+      color: #007bff !important;
     }
 
     .navbar-brand img {
-      height: 70px;
+      height: 50px;
     }
 
     /* Pusatkan semua teks */
@@ -112,8 +123,8 @@
 
     /* Jarak antar elemen */
     .section {
-      margin: 40px 0;
-      padding: 40px 0;
+      margin: 30px 0;
+      padding: 30px 0;
     }
 
     /* Warna latar belakang untuk setiap section */
@@ -141,34 +152,34 @@
 
     /* Alignment untuk h2 dan p */
     .heading_container h2 {
-      margin-bottom: 20px; /* Jarak antara h2 dan konten di bawahnya */
+      margin-bottom: 15px;
     }
 
     .heading_container h4 {
-      margin-top: 20px; /* Jarak antara h4 dan konten di atasnya */
+      margin-top: 15px;
     }
 
     /* Penomoran pada ol */
     ol {
-      padding-left: 20px; /* Memberi jarak pada penomoran */
+      padding-left: 20px;
     }
 
     ol li {
-      margin-bottom: 10px; /* Jarak antar item */
+      margin-bottom: 8px;
     }
 
     /* Penyesuaian untuk mobile */
     @media (max-width: 768px) {
       body {
-        font-size: 14px;
+        font-size: 12px;
       }
 
       h1, h2, h3, h4, h5, h6 {
-        font-size: 1.5em;
+        font-size: 1.2em;
       }
 
       p {
-        font-size: 0.9em;
+        font-size: 12px;
       }
 
       ol, ul {
@@ -177,10 +188,11 @@
 
       .navbar-nav .nav-link {
         margin: 5px 0;
+        font-size: 12px;
       }
 
       .navbar-brand img {
-        height: 50px;
+        height: 40px;
       }
 
       .section {
@@ -189,11 +201,11 @@
       }
 
       .heading_container h2 {
-        font-size: 1.5em;
+        font-size: 1.2em;
       }
 
       .heading_container h4 {
-        font-size: 1.2em;
+        font-size: 1em;
       }
     }
 
@@ -201,18 +213,18 @@
     .footer_section {
       background-color: #333;
       color: #fff;
-      padding: 20px 0;
+      padding: 15px 0;
       text-align: center;
     }
 
     .footer_section p {
       margin: 0;
-      font-size: 14px;
+      font-size: 12px;
     }
 
     @media (max-width: 768px) {
       .footer_section p {
-        font-size: 12px;
+        font-size: 10px;
       }
     }
 
@@ -225,6 +237,7 @@
     .nav-item.dropdown .dropdown-item {
       color: #fff !important;
       font-weight: 600;
+      font-size: 14px;
     }
 
     .nav-item.dropdown .dropdown-item:hover {
@@ -282,6 +295,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="portofolio.html">Portofolio</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="berita.html">Berita</a>
+              </li>
               <!-- Dropdown Bahasa -->
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -328,7 +344,7 @@
       </div>
       <p id="riwayatDescription1" class="justify-text">Perjalanan awal tentang riwayat singkat kelahiran Koperasi Energi Pertambangan, Perdagangan. Patuari Mining Niaga.</p>
       <p id="riwayatDescription2" class="justify-text">Patuari Mining Niaga merupakan koperasi yang bergerak dalam unit usaha pertambangan bijih logam emas dan perak, energi terbarukan, pemurnian air, treatment limbah WTP, STP, IPAL, serta jasa perdagangan. Koperasi ini didirikan pada Jumat, 7 Februari 2025.</p>
-      <p id="riwayatDescription3" class="justify-text"> Koperasi Patuari Mining Niaga mengolah bijih logam dengan metode heap leaching Jinchan Metalic Ore Dressing Agent (Environmental-Friendly Gold extraction) dan Cyanida + GDA (Gold Dressing Agent). Transformasi tahun 2025 dilakukan oleh E. Theny Tampi, Randi Mamola, dan Khaliq Mantiri yang sepakat mendirikan koperasi dengan metode pertambangan hydrometallurgy dan pyrometallurgy yang ramah lingkungan.</p>
+      <p id="riwayatDescription3" class="justify-text">Koperasi Patuari Mining Niaga mengolah bijih logam dengan metode heap leaching Jinchan Metalic Ore Dressing Agent (Environmental-Friendly Gold extraction) dan Cyanida + GDA (Gold Dressing Agent).</p>
     </div>
   </div>
 
@@ -409,7 +425,7 @@
         riwayatTitle: "Riwayat Koperasi",
         riwayatDescription1: "Perjalanan awal tentang riwayat singkat kelahiran Koperasi Energi Pertambangan, Perdagangan. Patuari Mining Niaga.",
         riwayatDescription2: "Patuari Mining Niaga merupakan koperasi yang bergerak dalam unit usaha pertambangan bijih logam emas dan perak, energi terbarukan, pemurnian air, treatment limbah WTP, STP, IPAL, serta jasa perdagangan. Koperasi ini didirikan pada Jumat, 7 Februari 2025.",
-        riwayatDescription3: "Koperasi Patuari Mining Niaga mengolah bijih logam dengan metode heap leaching Jinchan Metalic Ore Dressing Agent (Environmental-Friendly Gold extraction) dan Cyanida + GDA (Gold Dressing Agent). Transformasi tahun 2025 dilakukan oleh E. Theny Tampi, Randi Mamola, dan Khaliq Mantiri yang sepakat mendirikan koperasi dengan metode pertambangan hydrometallurgy dan pyrometallurgy yang ramah lingkungan.",
+        riwayatDescription3: "Koperasi Patuari Mining Niaga mengolah bijih logam dengan metode heap leaching Jinchan Metalic Ore Dressing Agent (Environmental-Friendly Gold extraction) dan Cyanida + GDA (Gold Dressing Agent).",
         etikaTitle: "Menegakkan Etika Bisnis Yang Tinggi dan Pertanggung Jawaban",
         etikaPrinsip: "Prinsip Etika Bisnis",
         etikaDescription: "Menjunjung tinggi integritas, moralitas, dan tanggung jawab dalam semua aspek bisnis dalam wirausaha.",
@@ -450,7 +466,7 @@
         riwayatTitle: "Company History",
         riwayatDescription1: "The early journey of the brief history of the birth of the Energy, Mining, and Trade Cooperative. Patuari Mining Niaga.",
         riwayatDescription2: "Patuari Mining Niaga is a cooperative engaged in the business units of gold and silver ore mining, renewable energy, water purification, WTP, STP, WWTP waste treatment, and trading services. This cooperative was established on Friday, February 7, 2025.",
-        riwayatDescription3: "Patuari Mining Niaga Cooperative processes metal ores using the heap leaching Jinchan Metalic Ore Dressing Agent (Environmental-Friendly Gold extraction) and Cyanida + GDA (Gold Dressing Agent) methods. The transformation in 2025 was carried out by E. Theny Tampi, Randi Mamola, and Khaliq Mantiri, who agreed to establish a cooperative with environmentally friendly hydrometallurgy and pyrometallurgy mining methods.",
+        riwayatDescription3: "Patuari Mining Niaga Cooperative processes metal ores using the heap leaching Jinchan Metalic Ore Dressing Agent (Environmental-Friendly Gold extraction) and Cyanida + GDA (Gold Dressing Agent) methods.",
         etikaTitle: "Upholding High Business Ethics and Responsibility",
         etikaPrinsip: "Business Ethics Principles",
         etikaDescription: "Upholding integrity, morality, and responsibility in all aspects of business in entrepreneurship.",

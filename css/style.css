@@ -1343,3 +1343,75 @@ footer .copyright p {
 .navbar-nav {
   gap: 5px; /* Jarak antara item navbar */
 }
+
+/* Navbar dengan warna hitam transparan */
+.header_bottom {
+  background-color: rgba(0, 0, 0, 0.7); /* Hitam transparan */
+  padding: 8px 0; /* Padding lebih kecil */
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important; /* Warna teks putih */
+  font-weight: 600;
+  margin: 0 5px; /* Margin lebih kecil */
+  padding: 6px 10px; /* Padding lebih kecil */
+  font-size: 14px; /* Ukuran font lebih kecil */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Animasi hover */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff !important; /* Warna teks biru saat hover */
+  background-color: rgba(255, 255, 255, 0.1); /* Background hover */
+  border-radius: 4px; /* Border radius saat hover */
+}
+
+.navbar-brand img {
+  height: 50px; /* Ukuran logo lebih kecil */
+}
+
+/* Dropdown menu */
+.nav-item.dropdown .dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.8); /* Background dropdown */
+  border: none;
+  margin-top: 5px; /* Jarak dari navbar */
+}
+
+.nav-item.dropdown .dropdown-item {
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 14px; /* Ukuran font lebih kecil */
+  padding: 8px 16px; /* Padding dropdown item */
+  transition: background-color 0.3s ease; /* Animasi hover */
+}
+
+.nav-item.dropdown .dropdown-item:hover {
+  background-color: #007bff; /* Background hover */
+  color: #fff !important;
+}
+
+/* Toggler icon */
+.navbar-toggler {
+  border: none;
+  padding: 6px 10px;
+}
+
+.navbar-toggler-icon {
+  background-color: #fff; /* Warna icon toggler */
+  border-radius: 3px;
+}
+
+/* Responsif untuk mode mobile */
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+    margin: 5px 0; /* Margin lebih kecil saat mode mobile */
+    padding: 8px 16px; /* Padding lebih kecil saat mode mobile */
+  }
+
+  .navbar-brand img {
+    height: 40px; /* Ukuran logo lebih kecil saat mode mobile */
+  }
+
+  .nav-item.dropdown .dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.9); /* Background dropdown lebih gelap */
+  }
+}

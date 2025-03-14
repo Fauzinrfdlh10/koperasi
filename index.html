@@ -238,70 +238,68 @@
         .footer_section a:hover {
             color: #0056b3;
         }
-/* Gaya untuk section mitra dan bank */
-.mitra_section {
-    padding: 60px 0;
-    background-color: #f9f9f9; /* Warna latar belakang */
-}
+        /* Gaya untuk section mitra dan bank */
+        .mitra_section {
+            padding: 60px 0;
+            background-color: #f9f9f9; /* Warna latar belakang */
+        }
 
-/* Gaya untuk logo mitra dan bank */
-.mitra-logo {
-    width: 200px; /* Ukuran default untuk logo mitra */
-    height: auto;
-    margin: 20px;
-    transition: transform 0.3s ease-in-out;
-}
+        /* Gaya untuk logo mitra dan bank */
+        .mitra-logo {
+            width: 150px; /* Ukuran default untuk logo mitra */
+            height: auto;
+            margin: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
 
-.bank-logo {
-    width: 250px; /* Ukuran lebih besar untuk logo bank */
-}
+        .mitra-logo:hover {
+            transform: scale(1.1); /* Efek zoom saat hover */
+        }
 
-.mitra-logo:hover {
-    transform: scale(1.1); /* Efek zoom saat hover */
-}
+        /* Container untuk logo mitra dan bank */
+        .logo-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
 
-/* Container untuk logo mitra dan bank */
-.logo-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .mitra-logo {
+                width: 120px; /* Ukuran lebih kecil untuk layar mobile */
+                margin: 10px;
+            }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .mitra-logo {
-        width: 150px; /* Ukuran lebih kecil untuk layar mobile */
-        margin: 10px;
-    }
-    .bank-logo {
-        width: 200px; /* Ukuran lebih kecil untuk layar mobile */
-    }
-}
+            /* Mengatur 2 logo per baris pada mode HP */
+            .logo-container .row {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .mitra-logo {
-        width: 120px; /* Ukuran lebih kecil untuk layar mobile */
-        margin: 10px;
-    }
-}
+            .logo-container .col-6 {
+                flex: 0 0 50%; /* 2 kolom per baris */
+                max-width: 50%;
+            }
+        }
 
-/* Gaya untuk dropdown bahasa */
-.navbar .dropdown-menu {
-    min-width: 120px;
-}
+        /* Gaya untuk dropdown bahasa */
+        .navbar .dropdown-menu {
+            min-width: 120px;
+        }
 
-.navbar .dropdown-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
+        .navbar .dropdown-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
 
-.navbar .dropdown-item img {
-    width: 20px;
-    height: auto;
-}
+        .navbar .dropdown-item img {
+            width: 20px;
+            height: auto;
+        }
+        
     </style>
 </head>
 <body>
@@ -311,7 +309,7 @@
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="3000">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="hero_bg_box" style="background-image: url(images/bg6.jpg);"></div>
+                    <div class="hero_bg_box" style="background-image: url(images/contoh1.jpg);"></div>
                 </div>
                 <div class="carousel-item">
                     <div class="hero_bg_box" style="background-image: url(images/bg4.jpg);"></div>
@@ -321,65 +319,64 @@
                 </div>
             </div>  
         </div>
-       <!-- Navbar -->
+   <!-- Navbar -->
 <div class="header_bottom">
     <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/logo2.png" alt="Logo" style="height: 70px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Top Management
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="service.html">Pendiri Koperasi</a>
-                            <a class="dropdown-item" href="advisor pengawas.html">Advisor Koperasi</a>
-                            <a class="dropdown-item" href="legal koperasi.html">Legal Koperasi</a>
-                            <a class="dropdown-item" href="dewan pengawas.html">Dewan Pengawas</a>
-                            <a class="dropdown-item" href="anggota.html">Anggota Koperasi</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="team.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portofolio.html">Portofolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="berita.html">Berita</a>
-                    </li>
-                    <!-- Dropdown Bahasa -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="https://flagcdn.com/id.svg" alt="Indonesia" style="width: 20px; height: auto;"> Bahasa
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="languageDropdown">
-                            <a class="dropdown-item" href="#" data-lang="id">
-                                <img src="https://flagcdn.com/id.svg" alt="Indonesia" style="width: 20px; height: auto;"> Indonesia
-                            </a>
-                            <a class="dropdown-item" href="#" data-lang="en">
-                                <img src="https://flagcdn.com/gb.svg" alt="English" style="width: 20px; height: auto;"> English
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo2.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Top Management
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="service.html">Pendiri Koperasi</a>
+                <a class="dropdown-item" href="advisor pengawas.html">Advisor Koperasi</a>
+                <a class="dropdown-item" href="legal koperasi.html">Legal Koperasi</a>
+                <a class="dropdown-item" href="dewan pengawas.html">Dewan Pengawas</a>
+                <a class="dropdown-item" href="anggota.html">Anggota Koperasi</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portofolio.html">Portofolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="berita.html">Berita</a>
+            </li>
+            <!-- Dropdown Bahasa -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="https://flagcdn.com/id.svg" alt="Indonesia" style="width: 20px; height: auto;"> Bahasa
+              </a>
+              <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                <a class="dropdown-item" href="#" data-lang="id">
+                  <img src="https://flagcdn.com/id.svg" alt="Indonesia" style="width: 20px; height: auto;"> Indonesia
+                </a>
+                <a class="dropdown-item" href="#" data-lang="en">
+                  <img src="https://flagcdn.com/gb.svg" alt="English" style="width: 20px; height: auto;"> English
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
-</div>
-        <!-- Detail Box (Text and Logo) -->
+  </div> <!-- Detail Box (Text and Logo) -->
         <div class="detail-box">
             <h1 id="heading">Koperasi Energi <br> Pertambangan, Perdagangan</h1>
             <p id="subheading">Ayo Bermitra Bersama Kami. Untuk Menjadi Anggota Koperasi Menuju Perubahan</p>
@@ -463,26 +460,30 @@
         </div>
         <div class="logo-container">
             <div class="row justify-content-center">
-                <div class="col-md-3 col-sm-6">
+                <!-- Baris 1 -->
+                <div class="col-6 col-md-3 col-sm-6">
                     <img src="images/esdm.png" alt="Mitra 1" class="img-fluid mitra-logo">
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <img src="images/kemenkop.jpeg" alt="Mitra 2" class="img-fluid mitra-logo">
+                <div class="col-6 col-md-3 col-sm-6">
+                    <img src="images/logo/kemenko.jpg" alt="Mitra 2" class="img-fluid mitra-logo">
                 </div>
-                <div class="col-md-3 col-sm-6">
+                <!-- Baris 2 -->
+                <div class="col-6 col-md-3 col-sm-6">
                     <img src="images/iatpi.png" alt="Mitra 3" class="img-fluid mitra-logo">
                 </div>
-                <div class="col-md-3 col-sm-6">
+                <div class="col-6 col-md-3 col-sm-6">
                     <img src="images/itb.png" alt="Mitra 4" class="img-fluid mitra-logo">
                 </div>
-                <div class="col-md-3 col-sm-6">
+                <!-- Baris 3 -->
+                <div class="col-6 col-md-3 col-sm-6">
                     <img src="images/siloam.jpeg" alt="Mitra 5" class="img-fluid mitra-logo">
                 </div>
-                <div class="col-md-3 col-sm-6">
+                <div class="col-6 col-md-3 col-sm-6">
                     <img src="images/al.jpeg" alt="Mitra 6" class="img-fluid mitra-logo">
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <img src="images/komando.jpg" alt="Mitra 6" class="img-fluid mitra-logo">
+                <!-- Baris 4 -->
+                <div class="col-6 col-md-3 col-sm-6">
+                    <img src="images/komando.jpg" alt="Mitra 7" class="img-fluid mitra-logo">
                 </div>
             </div>
         </div>
@@ -497,11 +498,12 @@
         </div>
         <div class="logo-container">
             <div class="row justify-content-center">
-                <div class="col-md-3 col-sm-6">
-                    <img src="images/bank-sulut.jpg" alt="Bank 1" class="img-fluid mitra-logo bank-logo">
+                <!-- Baris 1 -->
+                <div class="col-6 col-md-3 col-sm-6">
+                    <img src="images/bank-sulut.jpg" alt="Bank 1" class="img-fluid mitra-logo">
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <img src="images/bca.jpeg" alt="Bank 2" class="img-fluid mitra-logo bank-logo">
+                <div class="col-6 col-md-3 col-sm-6">
+                    <img src="images/bca.jpeg" alt="Bank 2" class="img-fluid mitra-logo">
                 </div>
             </div>
         </div>

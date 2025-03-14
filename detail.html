@@ -30,51 +30,36 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.scss" />
 
   <style>
-    .team-member {
-      background-color: #fff;
-      border: 1px solid #d4d0d0;
-      border-radius: 8px;
+    .img-box img {
+      width: 100%; /* Gambar mengisi lebar container */
+      height: auto; /* Menjaga aspek rasio gambar */
+      border-radius: 8px; /* Membuat sudut gambar lebih lembut */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan efek bayangan */
+    }
+
+    .detail-box {
       padding: 20px;
-      margin: 10px;
-      text-align: center;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      width: 200px;
     }
 
-    .team-member h3 {
-      margin: 0;
-      font-size: 18px;
+    .detail-box h3 {
+      font-size: 24px;
       color: #333;
+      margin-bottom: 20px;
     }
 
-    .team-member p {
-      margin: 5px 0 0;
+    .detail-box p {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .detail-box p.note {
       font-size: 14px;
       color: #777;
-    }
-
-    .top-members {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 40px;
-      flex-wrap: wrap;
-    }
-
-    .img-box img {
-      width: 100px; /* Ukuran foto disesuaikan */
-      height: 100px; /* Ukuran foto disesuaikan */
-      border-radius: 50%; /* Membuat foto bulat */
-      object-fit: cover; /* Memastikan foto tidak terdistorsi */
-    }
-
-    .service_owl-carousel .img-box img {
-      width: 150px; /* Ukuran foto di carousel */
-      height: 150px; /* Ukuran foto di carousel */
-      border-radius: 50%; /* Membuat foto bulat */
-      object-fit: cover; /* Memastikan foto tidak terdistorsi */
+      font-style: italic;
     }
   </style>
 </head>
@@ -150,48 +135,34 @@
     <div class="container">
       <div class="heading_container heading_center">
         <h2 id="sectionTitle">
-          STRUKTUR KOPERASI <br> PATUARI MINING NIAGA
+            Study Kelayakan Pertambangan Rakyat <br> Pertambangan Rakyat
         </h2>
-        <p id="sectionDescription" class="col-lg-8 px-0">
-          ADVISOR KOPERASI
-        </p>
       </div>
 
-      <!-- Anggota dengan Carousel -->
-      <div class="service_container">
-        <div class="carousel-wrap">
-          <!-- Anggota 1 -->
-          <div class="item">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/8.PNG" alt="Ketua Pengawas" />
-              </div>
-              <div class="detail-box">
-                <p id="advisor1">Anna Mantiri.</p>
-              </div>
-            </div>
+      <!-- Gambar dan Penjelasan Pendiri Koperasi -->
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="images/gambar/porto 11.jpeg" alt="Pendiri Koperasi" class="img-fluid" />
           </div>
-          <!-- Anggota 2 -->
-          <div class="item">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/9.PNG" alt="Sekretaris Pengawas" />
-              </div>
-              <div class="detail-box">
-                <p id="advisor2">A.Indah Sari P.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Anggota 4 -->
-          <div class="item">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/2.PNG" alt="Anggota 2" />
-              </div>
-              <div class="detail-box">
-                <p id="advisor3">Hendrik Hadju.</p>
-              </div>
-            </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <h3 id="founderTitle">Study Kelayakan Pertambangan Rakyat</h3>
+            <p id="founderDescription1">
+              Study Kelayakan Pertambangan Rakyat Dengan Mengelolah Bijih Logam Metode Heap Leaching Jinchan Metalic Ore Dressing Agent (Environmental-Friendly Gold Extraction) dan Cyanida + GDA (Gold Dressing Agent) Ramah Lingkungan (Eco-Friendly). Set Up IPAL Instalasi Pengolahan Air Limbah Pasca Tambang, prasarana digunakan untuk mengolah limbah cair yang beracun menjadi air yang aman untuk digunakan kembali. IPAL dapat digunakan untuk mengolah limbah dari limbah industri, seperti limbah cair yang tercemar dari aktivitas pertambangan.
+            </p>
+            <p id="founderDescription2">
+              Catatan:
+              * Pasal 2 ayat (1) Keputusan Menteri Negara Lingkungan Hidup Nomor 202 Tahun 2004, Air limbah kegiatan pertambangan bijih emas dan atau tembaga terdiri dari:
+              <li>A. Air limbah kegiatan penambangan bijih emas dan atau tembaga yaitu air yang terkena dampak kegiatan penambangan bijih emas dan atau tembaga sehingga kualitasnya berubah dan perubahan tersebut terkait langsung dengan kegiatan penambangan bijih emas dan atau tembaga tersebut.</li>
+              <li>B. Air limbah kegiatan pengolahan bijih emas dan atau tembaga yang dibuang ke badan air.            </li>
+              <li>C. Air limbah bagi kegiatan paska reboisasi penutupan tambang.</li>
+            </p>
+            <p class="note" id="founderNote">
+              Keputusan Menteri Negara Lingkungan Hidup Nomor 202 Tahun 2004 Tentang Baku Mutu Air Limbah Bagi Usaha dan Kegiatan Pertambangan Bijih Emas dan Tembaga.
+              Lokasi: Minahasa - Sulawesi Utara.
+            </p>
           </div>
         </div>
       </div>
@@ -228,18 +199,20 @@
     const content = {
       id: {
         sectionTitle: "STRUKTUR KOPERASI <br> PATUARI MINING NIAGA",
-        sectionDescription: "ADVISOR KOPERASI",
-        advisor1: "Anna Mantiri.",
-        advisor2: "A.Indah Sari P.",
-        advisor3: "Hendrik Hadju.",
+        sectionDescription: "PENDIRI KOPERASI",
+        founderTitle: "Pendiri Koperasi Patuari Mining Niaga",
+        founderDescription1: "Study Kelayakan Pertambangan Rakyat Dengan Mengelolah Bijih Logam Metode Heap Leaching Jinchan Metalic Ore Dressing Agent (Environmental-Friendly Gold Extraction) dan Cyanida + GDA (Gold Dressing Agent) Ramah Lingkungan (Eco-Friendly). Set Up IPAL Instalasi Pengolahan Air Limbah Pasca Tambang, prasarana digunakan untuk mengolah limbah cair yang beracun menjadi air yang aman untuk digunakan kembali. IPAL dapat digunakan untuk mengolah limbah dari limbah industri, seperti limbah cair yang tercemar dari aktivitas pertambangan.",
+        founderDescription2: "Catatan: * Pasal 2 ayat (1) Keputusan Menteri Negara Lingkungan Hidup Nomor 202 Tahun 2004, Air limbah kegiatan pertambangan bijih emas dan atau tembaga terdiri dari: A. Air limbah kegiatan penambangan bijih emas dan atau tembaga yaitu air yang terkena dampak kegiatan penambangan bijih emas dan atau tembaga sehingga kualitasnya berubah dan perubahan tersebut terkait langsung dengan kegiatan penambangan bijih emas dan atau tembaga tersebut. B. Air limbah kegiatan pengolahan bijih emas dan atau tembaga yang dibuang ke badan air. C. Air limbah bagi kegiatan paska reboisasi penutupan tambang.",
+        founderNote: "Keputusan Menteri Negara Lingkungan Hidup Nomor 202 Tahun 2004 Tentang Baku Mutu Air Limbah Bagi Usaha dan Kegiatan Pertambangan Bijih Emas dan Tembaga. Lokasi: Minahasa - Sulawesi Utara.",
         footerText: "&copy; <span id='displayYear'></span> All Rights Reserved By Patuari Mining Niaga"
       },
       en: {
         sectionTitle: "STRUCTURE OF <br> PATUARI MINING NIAGA COOPERATIVE",
-        sectionDescription: "COOPERATIVE ADVISOR",
-        advisor1: "Anna Mantiri.",
-        advisor2: "A.Indah Sari P.",
-        advisor3: "Hendrik Hadju.",
+        sectionDescription: "COOPERATIVE FOUNDERS",
+        founderTitle: "Founders of Patuari Mining Niaga Cooperative",
+        founderDescription1: "Feasibility Study of Community Mining by Processing Metal Ores Using Heap Leaching Method with Jinchan Metalic Ore Dressing Agent (Environmental-Friendly Gold Extraction) and Cyanide + GDA (Gold Dressing Agent) Eco-Friendly. Setting Up a Post-Mining Wastewater Treatment Plant (IPAL), infrastructure used to treat toxic liquid waste into safe water for reuse. IPAL can be used to treat industrial waste, such as contaminated liquid waste from mining activities.",
+        founderDescription2: "Note: * Article 2 Paragraph (1) of the Decree of the Minister of Environment No. 202 of 2004, Wastewater from gold and/or copper ore mining activities consists of: A. Wastewater from gold and/or copper ore mining activities, which is water affected by mining activities, causing changes in its quality directly related to the mining activities. B. Wastewater from gold and/or copper ore processing discharged into water bodies. C. Wastewater for post-reclamation activities after mine closure.",
+        founderNote: "Decree of the Minister of Environment No. 202 of 2004 Regarding Wastewater Quality Standards for Gold and Copper Ore Mining Businesses and Activities. Location: Minahasa - North Sulawesi.",
         footerText: "&copy; <span id='displayYear'></span> All Rights Reserved By Patuari Mining Niaga"
       }
     };
@@ -248,9 +221,10 @@
     function changeLanguage(lang) {
       document.getElementById("sectionTitle").innerHTML = content[lang].sectionTitle;
       document.getElementById("sectionDescription").textContent = content[lang].sectionDescription;
-      document.getElementById("advisor1").textContent = content[lang].advisor1;
-      document.getElementById("advisor2").textContent = content[lang].advisor2;
-      document.getElementById("advisor3").textContent = content[lang].advisor3;
+      document.getElementById("founderTitle").textContent = content[lang].founderTitle;
+      document.getElementById("founderDescription1").textContent = content[lang].founderDescription1;
+      document.getElementById("founderDescription2").textContent = content[lang].founderDescription2;
+      document.getElementById("founderNote").textContent = content[lang].founderNote;
       document.getElementById("footerText").innerHTML = content[lang].footerText;
 
       // Simpan preferensi bahasa ke localStorage
