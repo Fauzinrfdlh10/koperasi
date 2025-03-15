@@ -21,7 +21,8 @@
       background-color: #f9f9f9;
     }
 
-    .documentation-card {
+    .documentation-card,
+    .combined-card {
       background: #fff;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -30,29 +31,41 @@
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .documentation-card:hover {
+    .documentation-card:hover,
+    .combined-card:hover {
       transform: translateY(-10px);
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
 
-    .documentation-card img {
+    .documentation-card img,
+    .combined-images img {
       width: 100%;
       height: 200px;
       object-fit: cover;
     }
 
-    .documentation-card .card-body {
+    .combined-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .documentation-card .card-body,
+    .combined-card .card-body {
       padding: 20px;
       text-align: center;
     }
 
-    .documentation-card h3 {
+    .documentation-card h3,
+    .combined-card h3 {
       font-size: 20px;
       font-weight: 600;
       margin-bottom: 10px;
     }
 
-    .documentation-card p {
+    .documentation-card p,
+    .combined-card p {
       font-size: 14px;
       color: #555;
       margin-bottom: 15px;
@@ -90,15 +103,18 @@
 
     /* Responsif untuk layar kecil */
     @media (max-width: 768px) {
-      .documentation-card img {
+      .documentation-card img,
+      .combined-images img {
         height: 150px;
       }
 
-      .documentation-card h3 {
+      .documentation-card h3,
+      .combined-card h3 {
         font-size: 18px;
       }
 
-      .documentation-card p {
+      .documentation-card p,
+      .combined-card p {
         font-size: 12px;
       }
 
@@ -182,18 +198,21 @@
   <section class="documentation-section">
     <div class="container">
       <div class="row">
-        <!-- Foto 11 -->
-        <div class="col-md-3 col-sm-6">
-          <div class="documentation-card">
-            <img src="images/gambar/porto 11.jpeg" alt="Dokumentasi 11">
+        <!-- Gabungan dua gambar pertama -->
+        <div class="col-md-6 col-sm-12">
+          <div class="combined-card">
+            <div class="combined-images">
+              <img src="images/gambar/porto 11.jpeg" alt="Dokumentasi 11">
+              <img src="images/gambar/porto 14.jpeg" alt="Dokumentasi 14">
+            </div>
             <div class="card-body">
-              <h3 id="doc11Title">Study Kelayakan Pertambangan Rakyat</h3>
-              <p id="doc11Desc">Lokasi : Minahasa - Sulawesi Utara.</p>
+              <h3 id="combinedTitle">Study Kelayakan Pertambangan Rakyat & Set Up IPAL</h3>
+              <p id="combinedDesc">Lokasi : Minahasa - Sulawesi Utara.</p>
               <a href="detail.html" class="read-more">Baca Selengkapnya</a>
             </div>
           </div>
         </div>
-        <!-- Foto 1 -->
+        <!-- Gambar lainnya -->
         <div class="col-md-3 col-sm-6">
           <div class="documentation-card">
             <img src="images/gambar/porto 1.jpeg" alt="Dokumentasi 1">
@@ -204,7 +223,6 @@
             </div>
           </div>
         </div>
-        <!-- Foto 2 -->
         <div class="col-md-3 col-sm-6">
           <div class="documentation-card">
             <img src="images/gambar/porto 2.jpeg" alt="Dokumentasi 2">
@@ -215,29 +233,6 @@
             </div>
           </div>
         </div>
-        <!-- Foto 12 -->
-        <div class="col-md-3 col-sm-6">
-          <div class="documentation-card">
-            <img src="images/gambar/porto 12.jpeg" alt="Dokumentasi 12">
-            <div class="card-body">
-              <h3 id="doc12Title">IPAL Puskesmas Telangsiong</h3>
-              <p id="doc12Desc">Lokasi : Kalimantan Tengah.</p>
-              <a href="detail12.html" class="read-more">Baca Selengkapnya</a>
-            </div>
-          </div>
-        </div>
-        <!-- Foto 13 -->
-        <div class="col-md-3 col-sm-6">
-          <div class="documentation-card">
-            <img src="images/gambar/porto 13.jpeg" alt="Dokumentasi 13">
-            <div class="card-body">
-              <h3 id="doc13Title">IPAL Puskesmas Telangsiong</h3>
-              <p id="doc13Desc">Lokasi : Kalimantan Tengah.</p>
-              <a href="detail13.html" class="read-more">Baca Selengkapnya</a>
-            </div>
-          </div>
-        </div>
-        <!-- Foto 3 -->
         <div class="col-md-3 col-sm-6">
           <div class="documentation-card">
             <img src="images/gambar/porto 3.jpeg" alt="Dokumentasi 3">
@@ -248,7 +243,6 @@
             </div>
           </div>
         </div>
-        <!-- Foto 4 -->
         <div class="col-md-3 col-sm-6">
           <div class="documentation-card">
             <img src="images/gambar/porto 4.jpeg" alt="Dokumentasi 4">
@@ -259,7 +253,6 @@
             </div>
           </div>
         </div>
-        <!-- Foto 5 -->
         <div class="col-md-3 col-sm-6">
           <div class="documentation-card">
             <img src="images/gambar/porto 5.jpeg" alt="Dokumentasi 5">
@@ -270,18 +263,16 @@
             </div>
           </div>
         </div>
-        <!-- Foto 6 -->
         <div class="col-md-3 col-sm-6">
           <div class="documentation-card">
             <img src="images/gambar/porto 6.jpeg" alt="Dokumentasi 6">
             <div class="card-body">
-              <h3 id="doc6Title">Study Uji Kelayakan SWRO </h3>
+              <h3 id="doc6Title">Study Uji Kelayakan SWRO</h3>
               <p id="doc6Desc">Lokasi : Komando Armada V Surabaya.</p>
               <a href="detail6.html" class="read-more">Baca Selengkapnya</a>
             </div>
           </div>
         </div>
-        <!-- Foto 7 -->
         <div class="col-md-3 col-sm-6">
           <div class="documentation-card">
             <img src="images/gambar/porto 7.jpeg" alt="Dokumentasi 7">
@@ -292,7 +283,6 @@
             </div>
           </div>
         </div>
-        <!-- Foto 8 -->
         <div class="col-md-3 col-sm-6">
           <div class="documentation-card">
             <img src="images/gambar/porto 8.jpeg" alt="Dokumentasi 8">
@@ -303,7 +293,6 @@
             </div>
           </div>
         </div>
-        <!-- Foto 9 -->
         <div class="col-md-3 col-sm-6">
           <div class="documentation-card">
             <img src="images/gambar/porto 9.jpeg" alt="Dokumentasi 9">
@@ -314,7 +303,6 @@
             </div>
           </div>
         </div>
-        <!-- Foto 10 -->
         <div class="col-md-3 col-sm-6">
           <div class="documentation-card">
             <img src="images/gambar/porto 10.jpeg" alt="Dokumentasi 10">
@@ -325,14 +313,23 @@
             </div>
           </div>
         </div>
-        <!-- Foto 14 -->
         <div class="col-md-3 col-sm-6">
           <div class="documentation-card">
-            <img src="images/gambar/porto 14.jpeg" alt="Dokumentasi 14">
+            <img src="images/gambar/porto 12.jpeg" alt="Dokumentasi 12">
             <div class="card-body">
-              <h3 id="doc14Title">Set Up IPAL Instalasi Pengolahan Air Limbah</h3>
-              <p id="doc14Desc">Lokasi : Minahasa - Sulawesi Utara.</p>
-              <a href="detail14.html" class="read-more">Baca Selengkapnya</a>
+              <h3 id="doc12Title">IPAL Puskesmas Telangsiong</h3>
+              <p id="doc12Desc">Lokasi : Kalimantan Tengah.</p>
+              <a href="detail12.html" class="read-more">Baca Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="documentation-card">
+            <img src="images/gambar/porto 13.jpeg" alt="Dokumentasi 13">
+            <div class="card-body">
+              <h3 id="doc13Title">IPAL Puskesmas Telangsiong</h3>
+              <p id="doc13Desc">Lokasi : Kalimantan Tengah.</p>
+              <a href="detail13.html" class="read-more">Baca Selengkapnya</a>
             </div>
           </div>
         </div>
@@ -360,6 +357,8 @@
     // Data konten dalam dua bahasa
     const content = {
       id: {
+        combinedTitle: "Study Kelayakan Pertambangan Rakyat & Set Up IPAL",
+        combinedDesc: "Lokasi : Minahasa - Sulawesi Utara.",
         doc1Title: "Instalasi RO Central",
         doc1Desc: "Lokasi : Ciputra Hospital Tangerang.",
         doc2Title: "IPAL Puskesmas Telangsiong",
@@ -380,17 +379,15 @@
         doc9Desc: "Lokasi : Komando Armada V Surabaya.",
         doc10Title: "Panel Control WTP",
         doc10Desc: "Lokasi : Central Siloam Bekasi.",
-        doc11Title: "Study Kelayakan Pertambangan Rakyat",
-        doc11Desc: "Lokasi : Minahasa - Sulawesi Utara.",
         doc12Title: "IPAL Puskesmas Telangsiong",
         doc12Desc: "Lokasi : Kalimantan Tengah.",
         doc13Title: "IPAL Puskesmas Telangsiong",
         doc13Desc: "Lokasi : Kalimantan Tengah.",
-        doc14Title: "Set Up IPAL Instalasi Pengolahan Air Limbah",
-        doc14Desc: "Lokasi : Minahasa - Sulawesi Utara.",
         footerText: "&copy; <span id='displayYear'></span> Hak Cipta Dilindungi Oleh Patuari Mining Niaga"
       },
       en: {
+        combinedTitle: "Community Mining Feasibility Study & Set Up Wastewater Treatment Plant",
+        combinedDesc: "Location : Minahasa - North Sulawesi.",
         doc1Title: "RO Central Installation",
         doc1Desc: "Location : Ciputra Hospital Tangerang.",
         doc2Title: "Telangsiong Health Center WWTP",
@@ -411,25 +408,29 @@
         doc9Desc: "Location : Navy Command V Surabaya.",
         doc10Title: "WTP Control Panel",
         doc10Desc: "Location : Siloam Central Bekasi.",
-        doc11Title: "Community Mining Feasibility Study",
-        doc11Desc: "Location : Minahasa - North Sulawesi.",
         doc12Title: "Telangsiong Health Center WWTP",
         doc12Desc: "Location : Central Kalimantan.",
         doc13Title: "Telangsiong Health Center WWTP",
         doc13Desc: "Location : Central Kalimantan.",
-        doc14Title: "Set Up Wastewater Treatment Plant (WWTP)",
-        doc14Desc: "Location : Minahasa - North Sulawesi.",
         footerText: "&copy; <span id='displayYear'></span> All Rights Reserved By Patuari Mining Niaga"
       }
     };
 
     // Fungsi untuk mengubah bahasa
     function changeLanguage(lang) {
-      // Update konten dokumentasi
-      for (let i = 1; i <= 14; i++) {
-        document.getElementById(`doc${i}Title`).textContent = content[lang][`doc${i}Title`];
-        document.getElementById(`doc${i}Desc`).textContent = content[lang][`doc${i}Desc`];
+      // Update konten gabungan dua gambar
+      document.getElementById("combinedTitle").textContent = content[lang].combinedTitle;
+      document.getElementById("combinedDesc").textContent = content[lang].combinedDesc;
+
+      // Update konten dokumentasi lainnya
+      for (let i = 1; i <= 13; i++) {
+        if (i !== 11 && i !== 14) { // Skip gambar 11 dan 14 karena sudah digabungkan
+          document.getElementById(`doc${i}Title`).textContent = content[lang][`doc${i}Title`];
+          document.getElementById(`doc${i}Desc`).textContent = content[lang][`doc${i}Desc`];
+        }
       }
+
+      // Update footer
       document.getElementById("footerText").innerHTML = content[lang].footerText;
 
       // Simpan preferensi bahasa ke localStorage
