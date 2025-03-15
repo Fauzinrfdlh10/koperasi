@@ -1369,13 +1369,25 @@ footer .copyright p {
   height: 50px; /* Ukuran logo lebih kecil */
 }
 
-/* Dropdown menu */
 .nav-item.dropdown .dropdown-menu {
-  background-color: rgba(0, 0, 0, 0.8); /* Background dropdown */
-  border: none;
+  background-color: rgba(255, 255, 255, 0.1); /* Background sangat transparan */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Kotak dengan transparansi */
+  border-radius: 5px; /* Sudut kotak yang sedikit melengkung */
   margin-top: 5px; /* Jarak dari navbar */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
 }
 
+/* Style untuk item di dalam dropdown */
+.nav-item.dropdown .dropdown-menu .dropdown-item {
+  color: rgba(255, 255, 255, 0.8); /* Warna teks */
+  padding: 8px 16px; /* Padding untuk item */
+}
+
+/* Hover effect untuk item dropdown */
+.nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Background saat hover */
+  color: rgba(255, 255, 255, 1); /* Warna teks saat hover */
+}
 .nav-item.dropdown .dropdown-item {
   color: #fff !important;
   font-weight: 600;
@@ -1412,6 +1424,6 @@ footer .copyright p {
   }
 
   .nav-item.dropdown .dropdown-menu {
-    background-color: rgba(0, 0, 0, 0.9); /* Background dropdown lebih gelap */
+    background-color: rgba(255, 255, 255, 0.1); /* Background sangat transparan */
   }
 }
