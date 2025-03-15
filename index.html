@@ -238,45 +238,6 @@
         .footer_section a:hover {
             color: #0056b3;
         }
-        /* Gaya untuk logo mitra dan bank */
-        .mitra-logo {
-            width: 150px; /* Ukuran default untuk logo mitra */
-            height: auto;
-            margin: 10px;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .mitra-logo:hover {
-            transform: scale(1.1); /* Efek zoom saat hover */
-        }
-
-        /* Container untuk logo mitra dan bank */
-        .logo-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .mitra-logo {
-                width: 120px; /* Ukuran lebih kecil untuk layar mobile */
-                margin: 10px;
-            }
-
-            /* Mengatur 2 logo per baris pada mode HP */
-            .logo-container .row {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            .logo-container .col-6 {
-                flex: 0 0 50%; /* 2 kolom per baris */
-                max-width: 50%;
-            }
-        }
         /* Gaya untuk dropdown bahasa */
         .navbar .dropdown-menu {
             min-width: 120px;
@@ -292,7 +253,38 @@
             width: 20px;
             height: auto;
         }
-        
+
+
+        .mitra_section {
+        padding: 40px 0;
+        background-color: #f8f9fa;
+    }
+    .mitra_section h2 {
+        margin-bottom: 30px;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .mitra_section img {
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    .mitra_section p {
+        font-size: 1rem;
+        color: #333;
+    }
+    @media (max-width: 768px) {
+        .mitra_section .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .mitra_section .col-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+
+           
     </style>
 </head>
 <body>
@@ -445,64 +437,62 @@
   </div>
 </section>
 
-<!-- Section Mitra Kami -->
-<section class="mitra_section layout_padding">
+<!-- Mitra Section -->
+<section class="mitra_section">
     <div class="container">
         <div class="heading_container heading_center">
-            <h2 id="mitraTitle">Mitra Kami</h2>
+            <h2>Mitra Kami</h2>
         </div>
-        <div class="logo-container">
-            <div class="row justify-content-center">
-                <!-- Baris 1 -->
-                <div class="col-6 col-md-3 col-sm-6">
-                    <img src="images/esdm.png" alt="Mitra 1" class="img-fluid mitra-logo">
-                </div>
-                <div class="col-6 col-md-3 col-sm-6">
-                    <img src="images/logo/kemenko.jpeg" alt="Mitra 2" class="img-fluid mitra-logo">
-                </div>
-                <!-- Baris 2 -->
-                <div class="col-6 col-md-3 col-sm-6">
-                    <img src="images/iatpi.png" alt="Mitra 3" class="img-fluid mitra-logo">
-                </div>
-                <div class="col-6 col-md-3 col-sm-6">
-                    <img src="images/itb.png" alt="Mitra 4" class="img-fluid mitra-logo">
-                </div>
-                <!-- Baris 3 -->
-                <div class="col-6 col-md-3 col-sm-6">
-                    <img src="images/siloam.jpeg" alt="Mitra 5" class="img-fluid mitra-logo">
-                </div>
-                <div class="col-6 col-md-3 col-sm-6">
-                    <img src="images/al.png" alt="Mitra 6" class="img-fluid mitra-logo">
-                </div>
-                <!-- Baris 4 -->
-                <div class="col-6 col-md-3 col-sm-6">
-                    <img src="images/komando.jpg" alt="Mitra 7" class="img-fluid mitra-logo">
-                </div>
+        <div class="row justify-content-center">
+            <!-- Mitra 1 -->
+            <div class="col-6 col-md-3 text-center mb-4">
+                <img src="images/esdm.png" alt="Mitra 1" class="img-fluid" style="width: 100px; height: 100px;">
+            </div>
+            <!-- Mitra 2 -->
+            <div class="col-6 col-md-3 text-center mb-4">
+                <img src="images/kemenko.jpeg" alt="Mitra 2" class="img-fluid" style="width: 100px; height: 100px;">
+            </div>
+            <!-- Mitra 3 -->
+            <div class="col-6 col-md-3 text-center mb-4">
+                <img src="images/iatpi.png" alt="Mitra 3" class="img-fluid" style="width: 100px; height: 100px;">
+            </div>
+            <!-- Mitra 4 -->
+            <div class="col-6 col-md-3 text-center mb-4">
+                <img src="images/itb.png" alt="Mitra 4" class="img-fluid" style="width: 100px; height: 100px;">
+            </div>
+            <!-- Mitra 5 -->
+            <div class="col-6 col-md-3 text-center mb-4">
+                <img src="images/al.png" alt="Mitra 5" class="img-fluid" style="width: 100px; height: 100px;">
+            </div>
+            <!-- Mitra 6 -->
+            <div class="col-6 col-md-3 text-center mb-4">
+                <img src="images/komando.jpg" alt="Mitra 6" class="img-fluid" style="width: 100px; height: 100px;">
+            </div>
+            <!-- Mitra 7 -->
+            <div class="col-6 col-md-3 text-center mb-4">
+                <img src="images/siloam.jpeg" alt="Mitra 7" class="img-fluid" style="width: 100px; height: 100px;">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Mitra Section -->
+<section class="mitra_section">
+    <div class="container">
+        <div class="heading_container heading_center">
+        </div>
+        <div class="row justify-content-center">
+            <!-- Mitra 1 -->
+            <div class="col-6 col-md-3 text-center mb-4">
+                <img src="images/bca.png" alt="Mitra 1" class="img-fluid" style="width: 100px; height: 100px;">
+            </div>
+            <!-- Mitra 2 -->
+            <div class="col-6 col-md-3 text-center mb-4">
+                <img src="images/bank-sulut.jpg" alt="Mitra 2" class="img-fluid" style="width: 100px; height: 100px;">
             </div>
         </div>
     </div>
 </section>
 
-<!-- Section Bank -->
-<section class="mitra_section layout_padding">
-    <div class="container">
-        <div class="heading_container heading_center">
-            <h2 id="bankTitle">Bank</h2>
-        </div>
-        <div class="logo-container">
-            <div class="row justify-content-center">
-                <!-- Baris 1 -->
-                <div class="col-6 col-md-3 col-sm-6">
-                    <img src="images/bank-sulut.jpg" alt="Bank 1" class="img-fluid mitra-logo">
-                </div>
-                <div class="col-6 col-md-3 col-sm-6">
-                    <img src="images/bca.png" alt="Bank 2" class="img-fluid mitra-logo">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- end team section -->
     <!-- Footer Section -->
     <footer class="footer_section">
         <div class="container">
@@ -562,8 +552,6 @@
                 sectionSolution: '" Your Trade Solution "',
                 teamTitle: "Sumber Daya Manusia",
                 teamSubtitle: "Didukung oleh IATPI",
-                mitraTitle: "Mitra Kami",
-                bankTitle: "Bank",
                 footerText: "&copy; <span id='displayYear'></span> All Rights Reserved By Patuari Mining Niaga"
             },
             en: {
@@ -577,8 +565,6 @@
                 sectionSolution: '" Your Trade Solution "',
                 teamTitle: "Human Resources",
                 teamSubtitle: "Supported by IATPI",
-                mitraTitle: "Our Partners",
-                bankTitle: "Bank",
                 footerText: "&copy; <span id='displayYear'></span> All Rights Reserved By Patuari Mining Niaga"
             }
         };
@@ -596,8 +582,6 @@
             document.getElementById("sectionSolution").textContent = content[lang].sectionSolution;
             document.getElementById("teamTitle").textContent = content[lang].teamTitle;
             document.getElementById("teamSubtitle").textContent = content[lang].teamSubtitle;
-            document.getElementById("mitraTitle").textContent = content[lang].mitraTitle;
-            document.getElementById("bankTitle").textContent = content[lang].bankTitle;
             document.getElementById("footerText").innerHTML = content[lang].footerText;
 
             // Simpan preferensi bahasa ke localStorage
