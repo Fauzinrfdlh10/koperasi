@@ -46,9 +46,18 @@
 
     .combined-images {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       gap: 10px;
       padding: 10px;
+    }
+
+    .combined-images img {
+      height: 150px;
+    }
+
+    .combined-images img:nth-child(4) {
+      grid-column: 1 / 4;
+      margin-top: 10px;
     }
 
     .documentation-card .card-body,
@@ -212,6 +221,35 @@
             </div>
           </div>
         </div>
+        <!-- Gabungan IPAL Puskesmas -->
+        <div class="col-md-6 col-sm-12">
+          <div class="combined-card">
+            <div class="combined-images">
+              <img src="images/gambar/porto 2.jpeg" alt="Dokumentasi 2">
+              <img src="images/gambar/porto 12.jpeg" alt="Dokumentasi 12">
+              <img src="images/gambar/porto 13.jpeg" alt="Dokumentasi 13">
+            </div>
+            <div class="card-body">
+              <h3 id="ipalTitle">IPAL Puskesmas Telangsiong</h3>
+              <p id="ipalDesc">Lokasi : Kalimantan Tengah.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Gabungan Studi Uji Kelayakan SWRO -->
+        <div class="col-md-6 col-sm-12">
+          <div class="combined-card">
+            <div class="combined-images">
+              <img src="images/gambar/porto 6.jpeg" alt="Dokumentasi 6">
+              <img src="images/gambar/porto 9.jpeg" alt="Dokumentasi 7">
+              <img src="images/gambar/porto 8.jpeg" alt="Dokumentasi 8">
+              <img src="images/gambar/porto 7.jpeg" alt="Dokumentasi 9" style="width: 100%; margin-top: 10px;">
+            </div>
+            <div class="card-body">
+              <h3 id="swroTitle">Studi Uji Kelayakan SWRO</h3>
+              <p id="swroDesc">Lokasi : Komando Armada V Surabaya.</p>
+            </div>
+          </div>
+        </div>
         <!-- Gambar lainnya -->
         <div class="col-md-3 col-sm-6">
           <div class="documentation-card">
@@ -219,17 +257,6 @@
             <div class="card-body">
               <h3 id="doc1Title">Instalasi RO Central</h3>
               <p id="doc1Desc">Lokasi : Ciputra Hospital Tangerang.</p>
-              <a href="detail.html" class="read-more">Baca Selengkapnya</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="documentation-card">
-            <img src="images/gambar/porto 2.jpeg" alt="Dokumentasi 2">
-            <div class="card-body">
-              <h3 id="doc2Title">IPAL Puskesmas Telangsiong</h3>
-              <p id="doc2Desc">Lokasi : Kalimantan Tengah.</p>
-              <a href="detail2.html" class="read-more">Baca Selengkapnya</a>
             </div>
           </div>
         </div>
@@ -239,7 +266,6 @@
             <div class="card-body">
               <h3 id="doc3Title">Instalasi RO Portable Lab</h3>
               <p id="doc3Desc">Lokasi : RS Harapan Kita Jakarta.</p>
-              <a href="detail3.html" class="read-more">Baca Selengkapnya</a>
             </div>
           </div>
         </div>
@@ -249,7 +275,6 @@
             <div class="card-body">
               <h3 id="doc4Title">WTP Central</h3>
               <p id="doc4Desc">Lokasi : Hospital Siloam Bekasi.</p>
-              <a href="detail4.html" class="read-more">Baca Selengkapnya</a>
             </div>
           </div>
         </div>
@@ -259,47 +284,6 @@
             <div class="card-body">
               <h3 id="doc5Title">Instalasi WTP RO RSUD</h3>
               <p id="doc5Desc">Lokasi : Pasar Rebo Jakarta.</p>
-              <a href="detail5.html" class="read-more">Baca Selengkapnya</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="documentation-card">
-            <img src="images/gambar/porto 6.jpeg" alt="Dokumentasi 6">
-            <div class="card-body">
-              <h3 id="doc6Title">Study Uji Kelayakan SWRO</h3>
-              <p id="doc6Desc">Lokasi : Komando Armada V Surabaya.</p>
-              <a href="detail6.html" class="read-more">Baca Selengkapnya</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="documentation-card">
-            <img src="images/gambar/porto 7.jpeg" alt="Dokumentasi 7">
-            <div class="card-body">
-              <h3 id="doc7Title">Study Uji Kelayakan SWRO</h3>
-              <p id="doc7Desc">Lokasi : Komando Armada V Surabaya.</p>
-              <a href="detail7.html" class="read-more">Baca Selengkapnya</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="documentation-card">
-            <img src="images/gambar/porto 8.jpeg" alt="Dokumentasi 8">
-            <div class="card-body">
-              <h3 id="doc8Title">Study Uji Kelayakan SWRO</h3>
-              <p id="doc8Desc">Lokasi : Komando Armada V Surabaya.</p>
-              <a href="detail8.html" class="read-more">Baca Selengkapnya</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="documentation-card">
-            <img src="images/gambar/porto 9.jpeg" alt="Dokumentasi 9">
-            <div class="card-body">
-              <h3 id="doc9Title">Study Uji Kelayakan SWRO</h3>
-              <p id="doc9Desc">Lokasi : Komando Armada V Surabaya.</p>
-              <a href="detail9.html" class="read-more">Baca Selengkapnya</a>
             </div>
           </div>
         </div>
@@ -309,27 +293,6 @@
             <div class="card-body">
               <h3 id="doc10Title">Panel Control WTP</h3>
               <p id="doc10Desc">Lokasi : Central Siloam Bekasi.</p>
-              <a href="detail10.html" class="read-more">Baca Selengkapnya</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="documentation-card">
-            <img src="images/gambar/porto 12.jpeg" alt="Dokumentasi 12">
-            <div class="card-body">
-              <h3 id="doc12Title">IPAL Puskesmas Telangsiong</h3>
-              <p id="doc12Desc">Lokasi : Kalimantan Tengah.</p>
-              <a href="detail12.html" class="read-more">Baca Selengkapnya</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="documentation-card">
-            <img src="images/gambar/porto 13.jpeg" alt="Dokumentasi 13">
-            <div class="card-body">
-              <h3 id="doc13Title">IPAL Puskesmas Telangsiong</h3>
-              <p id="doc13Desc">Lokasi : Kalimantan Tengah.</p>
-              <a href="detail13.html" class="read-more">Baca Selengkapnya</a>
             </div>
           </div>
         </div>
@@ -359,59 +322,39 @@
       id: {
         combinedTitle: "Study Kelayakan Pertambangan Rakyat & Set Up IPAL",
         combinedDesc: "Lokasi : Minahasa - Sulawesi Utara.",
+        ipalTitle: "IPAL Puskesmas Telangsiong",
+        ipalDesc: "Lokasi : Kalimantan Tengah.",
+        swroTitle: "Studi Uji Kelayakan SWRO",
+        swroDesc: "Lokasi : Komando Armada V Surabaya.",
         doc1Title: "Instalasi RO Central",
         doc1Desc: "Lokasi : Ciputra Hospital Tangerang.",
-        doc2Title: "IPAL Puskesmas Telangsiong",
-        doc2Desc: "Lokasi : Kalimantan Tengah.",
         doc3Title: "Instalasi RO Portable Lab",
         doc3Desc: "Lokasi : RS Harapan Kita Jakarta.",
         doc4Title: "WTP Central",
         doc4Desc: "Lokasi : Hospital Siloam Bekasi.",
         doc5Title: "Instalasi WTP RO RSUD",
         doc5Desc: "Lokasi : Pasar Rebo Jakarta.",
-        doc6Title: "Study Uji Kelayakan SWRO",
-        doc6Desc: "Lokasi : Komando Armada V Surabaya.",
-        doc7Title: "Study Uji Kelayakan SWRO",
-        doc7Desc: "Lokasi : Komando Armada V Surabaya.",
-        doc8Title: "Study Uji Kelayakan SWRO",
-        doc8Desc: "Lokasi : Komando Armada V Surabaya.",
-        doc9Title: "Study Uji Kelayakan SWRO",
-        doc9Desc: "Lokasi : Komando Armada V Surabaya.",
         doc10Title: "Panel Control WTP",
         doc10Desc: "Lokasi : Central Siloam Bekasi.",
-        doc12Title: "IPAL Puskesmas Telangsiong",
-        doc12Desc: "Lokasi : Kalimantan Tengah.",
-        doc13Title: "IPAL Puskesmas Telangsiong",
-        doc13Desc: "Lokasi : Kalimantan Tengah.",
         footerText: "&copy; <span id='displayYear'></span> Hak Cipta Dilindungi Oleh Patuari Mining Niaga"
       },
       en: {
         combinedTitle: "Community Mining Feasibility Study & Set Up Wastewater Treatment Plant",
         combinedDesc: "Location : Minahasa - North Sulawesi.",
+        ipalTitle: "Telangsiong Health Center WWTP",
+        ipalDesc: "Location : Central Kalimantan.",
+        swroTitle: "SWRO Feasibility Study",
+        swroDesc: "Location : Navy Command V Surabaya.",
         doc1Title: "RO Central Installation",
         doc1Desc: "Location : Ciputra Hospital Tangerang.",
-        doc2Title: "Telangsiong Health Center WWTP",
-        doc2Desc: "Location : Central Kalimantan.",
         doc3Title: "Portable RO Lab Installation",
         doc3Desc: "Location : Harapan Kita Hospital Jakarta.",
         doc4Title: "Central WTP",
         doc4Desc: "Location : Siloam Hospital Bekasi.",
         doc5Title: "WTP RO Installation at RSUD",
         doc5Desc: "Location : Pasar Rebo Jakarta.",
-        doc6Title: "SWRO Feasibility Study",
-        doc6Desc: "Location : Navy Command V Surabaya.",
-        doc7Title: "SWRO Feasibility Study",
-        doc7Desc: "Location : Navy Command V Surabaya.",
-        doc8Title: "SWRO Feasibility Study",
-        doc8Desc: "Location : Navy Command V Surabaya.",
-        doc9Title: "SWRO Feasibility Study",
-        doc9Desc: "Location : Navy Command V Surabaya.",
         doc10Title: "WTP Control Panel",
         doc10Desc: "Location : Siloam Central Bekasi.",
-        doc12Title: "Telangsiong Health Center WWTP",
-        doc12Desc: "Location : Central Kalimantan.",
-        doc13Title: "Telangsiong Health Center WWTP",
-        doc13Desc: "Location : Central Kalimantan.",
         footerText: "&copy; <span id='displayYear'></span> All Rights Reserved By Patuari Mining Niaga"
       }
     };
@@ -422,9 +365,17 @@
       document.getElementById("combinedTitle").textContent = content[lang].combinedTitle;
       document.getElementById("combinedDesc").textContent = content[lang].combinedDesc;
 
+      // Update konten IPAL Puskesmas
+      document.getElementById("ipalTitle").textContent = content[lang].ipalTitle;
+      document.getElementById("ipalDesc").textContent = content[lang].ipalDesc;
+
+      // Update konten Studi Uji Kelayakan SWRO
+      document.getElementById("swroTitle").textContent = content[lang].swroTitle;
+      document.getElementById("swroDesc").textContent = content[lang].swroDesc;
+
       // Update konten dokumentasi lainnya
-      for (let i = 1; i <= 13; i++) {
-        if (i !== 11 && i !== 14) { // Skip gambar 11 dan 14 karena sudah digabungkan
+      for (let i = 1; i <= 10; i++) {
+        if (i !== 2 && i !== 6 && i !== 7 && i !== 8 && i !== 9 && i !== 12 && i !== 13) { // Skip gambar 2, 6, 7, 8, 9, 12, dan 13 karena sudah digabungkan
           document.getElementById(`doc${i}Title`).textContent = content[lang][`doc${i}Title`];
           document.getElementById(`doc${i}Desc`).textContent = content[lang][`doc${i}Desc`];
         }

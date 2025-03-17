@@ -285,24 +285,29 @@
     }
     
     @media (max-width: 768px) {
+  .hero_bg_box {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+  .carousel-item {
+    height: 100vh;
+  }
   .hero_area {
-  height: 100vh;
-  background-size: 100% 100vh;
-  background-position: center;
-  background-attachment: fixed;
+    height: 100vh;
+  }
+  .mitra_section img {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .team-member .img-box img {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+  }
 }
 
-.carousel-item {
-  height: 100vh;
-}
-
-.hero_bg_box {
-  height: 100vh;
-  background-size: 100% 100vh;
-  background-position: center;
-  background-attachment: fixed;
-}
-}
     </style>
 </head>
 <body>
@@ -312,13 +317,13 @@
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="3000">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="hero_bg_box" style="background-image: url(images/contoh1.jpg);"></div>
+                    <div class="hero_bg_box" style="background-image: url(images/gold.jpg);"></div>
                 </div>
                 <div class="carousel-item">
-                    <div class="hero_bg_box" style="background-image: url(images/bg4.jpg);"></div>
+                    <div class="hero_bg_box" style="background-image: url(images/surya.jpg);"></div>
                 </div>
                 <div class="carousel-item">
-                    <div class="hero_bg_box" style="background-image: url(images/bg-baru.jpeg);"></div>
+                    <div class="hero_bg_box" style="background-image: url(images/bg5.jpeg);"></div>
                 </div>
             </div>  
         </div>
