@@ -20,26 +20,28 @@
     <link href="css/responsive.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
     <style>
-       /* Jika memiliki file Trajan Pro, gunakan font-face */
-    @font-face {
-      font-family: 'Trajan Pro';
-      src: url('fonts/TrajanPro-Regular.ttf') format('truetype');
-      font-weight: normal;
-      font-style: normal;
-    }
+        /* Jika memiliki file Trajan Pro, gunakan font-face */
+        @font-face {
+            font-family: 'Trajan Pro';
+            src: url('fonts/TrajanPro-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
 
-    /* Gaya font untuk nama */
-    .detail-box h5 {
-      font-family: 'Trajan Pro', 'Cinzel', serif; /* Gunakan Cinzel jika Trajan Pro tidak tersedia */
-      font-weight: bold;
-      font-size: 20px;
-    }
+        /* Gaya font untuk nama */
+        .detail-box h5 {
+            font-family: 'Trajan Pro', 'Cinzel', serif; /* Gunakan Cinzel jika Trajan Pro tidak tersedia */
+            font-weight: bold;
+            font-size: 20px;
+        }
+
         /* Hero Area Background */
         .hero_area {
             position: relative;
             height: 100vh;
             overflow: hidden;
         }
+
         .hero_bg_box {
             position: absolute;
             top: 0;
@@ -50,9 +52,11 @@
             background-size: cover;
             background-position: center;
         }
+
         .carousel-item {
             height: 100vh;
         }
+
         /* Navbar */
         .header_bottom {
             position: absolute;
@@ -62,20 +66,25 @@
             z-index: 2;
             background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for navbar */
         }
+
         .navbar {
             padding: 15px 20px; /* Add padding to the navbar */
         }
+
         .navbar-nav {
             margin-left: auto; /* Aligns navbar items to the right */
         }
+
         .navbar-nav .nav-link {
             color: #ffffff; /* Change link color to white */
             text-transform: uppercase; /* Uppercase links */
             padding: 5px 15px; /* Add padding to links */
         }
+
         .navbar-nav .nav-link:hover {
             color: #ffffff; /* Change color on hover */
         }
+
         /* Detail Box (Text and Logo) */
         .hero_area .detail-box {
             position: absolute;
@@ -88,73 +97,85 @@
             max-width: 80%; /* Batasi lebar maksimal */
             padding: 20px; /* Tambah padding agar lebih rapi */
         }
+
         .detail-box h1 {
             font-size: 3rem;
             font-weight: bold;
             margin-bottom: 20px; /* Jarak bawah untuk judul */
         }
+
         .detail-box p {
             font-size: 1.2rem;
             margin: 10px 0; /* Jarak atas dan bawah untuk paragraf */
         }
+
         .detail-box p:last-child {
             margin-top: 20px; /* Jarak atas khusus untuk paragraf terakhir */
             font-weight: bold; /* Tebalkan teks paragraf terakhir */
         }
+
         .logo-container img {
             width: 100px;
             height: auto;
             margin-bottom: 20px;
         }
+
         /* Responsive Background for Mobile Mode */
         @media (max-width: 768px) {
             .hero_area {
                 height: 100vh;
-                background-size: cover;
+                background-size: 100% 100%;
                 background-position: center;
             }
+
             .carousel-item {
                 height: 100vh;
             }
+
             .hero_bg_box {
-                background-size: cover;
+                background-size: 100% 100%;
                 background-position: center;
                 height: 100vh;
             }
+
             .hero_bg_box:nth-child(1) {
                 background-image: url('images/bg-new/bg-1-mobile.jpeg');
             }
+
             .hero_bg_box:nth-child(2) {
                 background-image: url('images/bg-new/bg-2-mobile.jpeg');
             }
+
             .hero_bg_box:nth-child(3) {
                 background-image: url('images/bg-new/enhanced_image-mobile.jpeg');
             }
-            .mitra_section img {
-                width: 50%;
-                height: auto;
-                margin: 0 auto;
+
+            .detail-box h1 {
+                font-size: 2rem;
             }
-            .team-member .img-box img {
-                width: 50%;
-                height: auto;
-                margin: 0 auto;
+
+            .detail-box p {
+                font-size: 1rem;
             }
         }
+
         /* Service, About, and Team Section */
         .service_section,
         .about_section,
         .team_section {
             padding: 60px 0; /* Add padding for sections */
         }
+
         .heading_container {
             text-align: center;
             margin-bottom: 40px;
         }
+
         .heading_container h2 {
             font-weight: bold;
             margin-bottom: 20px;
         }
+
         /* Responsive adjustments for text and images */
         .service_section .box,
         .about_section .detail-box,
@@ -162,12 +183,14 @@
             margin-bottom: 30px; /* Spacing between boxes */
             text-align: center; /* Center text in boxes */
         }
+
         .service_section .box img,
         .about_section .img-box img,
         .team_section .box .img-box img {
             max-width: 100%; /* Ensure images are responsive */
             height: auto; /* Maintain aspect ratio */
         }
+
         /* Struktur Koperasi Section */
         .top-members {
             display: flex;
@@ -175,11 +198,13 @@
             flex-wrap: wrap;
             margin-top: 20px;
         }
+
         .team-member {
             text-align: center;
             margin: 10px;
             flex: 1 1 30%; /* Flex properties for responsive layout */
         }
+
         .team-member .img-box img {
             width: 150px;
             height: 150px;
@@ -187,22 +212,27 @@
             object-fit: cover;
             transition: transform 0.3s ease-in-out;
         }
+
         .team-member .img-box img:hover {
             transform: scale(1.1);
         }
+
         .team-member h3 {
             margin-top: 10px;
             font-size: 1.5rem;
         }
+
         .team-member p {
             font-size: 1rem;
             color: #555;
         }
+
         @media (max-width: 768px) {
             .team-member {
                 flex: 1 1 100%; /* Full width on smaller screens */
             }
         }
+
         /* Animasi Fade In */
         @keyframes fadeIn {
             from {
@@ -212,6 +242,7 @@
                 opacity: 1;
             }
         }
+
         /* Animasi Slide Up */
         @keyframes slideUp {
             from {
@@ -223,30 +254,38 @@
                 opacity: 1;
             }
         }
+
         /* Class untuk animasi */
         .fade-in {
             opacity: 0;
         }
+
         .slide-up {
             opacity: 0;
         }
+
         /* Trigger animasi saat elemen muncul */
         .fade-in.visible {
             animation: fadeIn 1s ease-in-out forwards;
         }
+
         .slide-up.visible {
             animation: slideUp 1s ease-in-out forwards;
         }
+
         /* Delay untuk setiap anggota */
         .team-member:nth-child(1) {
             animation-delay: 0.2s;
         }
+
         .team-member:nth-child(2) {
             animation-delay: 0.4s;
         }
+
         .team-member:nth-child(3) {
             animation-delay: 0.6s;
         }
+
         /* Gaya untuk footer */
         .footer_section {
             background-color: #333;
@@ -254,16 +293,20 @@
             padding: 40px 0;
             text-align: center;
         }
+
         .footer_section p {
             margin-bottom: 0;
         }
+
         .footer_section a {
             color: #007bff;
             text-decoration: none;
         }
+
         .footer_section a:hover {
             color: #0056b3;
         }
+
         /* Gaya untuk dropdown bahasa */
         .navbar .dropdown-menu {
             min-width: 120px;
@@ -280,74 +323,42 @@
             height: auto;
         }
 
-
         .mitra_section {
-        padding: 40px 0;
-        background-color: #f8f9fa;
-    }
-    .mitra_section h2 {
-        margin-bottom: 30px;
-        font-size: 2rem;
-        font-weight: bold;
-    }
-    .mitra_section img {
-        border-radius: 10px;
-        margin-bottom: 10px;
-    }
-    .mitra_section p {
-        font-size: 1rem;
-        color: #333;
-    }
-    @media (max-width: 768px) {
-        .mitra_section .row {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            padding: 40px 0;
+            background-color: #f8f9fa;
         }
-        .mitra_section .col-6 {
-            flex: 0 0 50%;
-            max-width: 50%;
+
+        .mitra_section h2 {
+            margin-bottom: 30px;
+            font-size: 2rem;
+            font-weight: bold;
         }
-    }
-    
-    @media (max-width: 768px) {
-  .hero_area {
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-  }
-  .carousel-item {
-    height: 100vh;
-  }
-  .hero_bg_box {
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-  }
-  .hero_bg_box:nth-child(1) {
-    background-image: url('images/bg-new/bg-1-mobile.jpeg');
-  }
-  .hero_bg_box:nth-child(2) {
-    background-image: url('images/bg-new/bg-2-mobile.jpeg');
-  }
-  .hero_bg_box:nth-child(3) {
-    background-image: url('images/bg-new/enhanced_image-mobile.jpeg');
-  }
-  .mitra_section img {
-    width: 50%;
-    height: auto;
-    margin: 0 auto;
-  }
-  .team-member .img-box img {
-    width: 50%;
-    height: auto;
-    margin: 0 auto;
-  }
-}
 
+        .mitra_section img {
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
 
+        .mitra_section p {
+            font-size: 1rem;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .mitra_section .row {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .mitra_section .col-6 {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
     </style>
 </head>
+
 <body>
     <!-- Hero Area -->
     <div class="hero_area">
@@ -363,66 +374,67 @@
                 <div class="carousel-item">
                     <div class="hero_bg_box" style="background-image: url(images/bg-new/enhanced_image.jpeg);"></div>
                 </div>
-            </div>  
+            </div>
         </div>
-   <!-- Navbar -->
-<div class="header_bottom">
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg custom_nav-container">
-        <a class="navbar-brand" href="index.html">
-          <img src="images/logo2.png" alt="Logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Top Management
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="service.html">Pendiri Koperasi</a>
-                <a class="dropdown-item" href="advisor pengawas.html">Advisor Koperasi</a>
-                <a class="dropdown-item" href="legal koperasi.html">Legal Koperasi</a>
-                <a class="dropdown-item" href="dewan pengawas.html">Dewan Pengawas</a>
-                <a class="dropdown-item" href="anggota.html">Anggota Koperasi</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="team.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="portofolio.html">Portofolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="berita.html">Berita</a>
-            </li>
-            <!-- Dropdown Bahasa -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <img src="https://flagcdn.com/id.svg" alt="Indonesia" style="width: 20px; height: auto;"> Bahasa
-              </a>
-              <div class="dropdown-menu" aria-labelledby="languageDropdown">
-                <a class="dropdown-item" href="#" data-lang="id">
-                  <img src="https://flagcdn.com/id.svg" alt="Indonesia" style="width: 20px; height: auto;"> Indonesia
-                </a>
-                <a class="dropdown-item" href="#" data-lang="en">
-                  <img src="https://flagcdn.com/gb.svg" alt="English" style="width: 20px; height: auto;"> English
-                </a>
-              </div>
-            </li>
-          </ul>
+        <!-- Navbar -->
+        <div class="header_bottom">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg custom_nav-container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo2.png" alt="Logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Top Management
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="service.html">Pendiri Koperasi</a>
+                                    <a class="dropdown-item" href="advisor pengawas.html">Advisor Koperasi</a>
+                                    <a class="dropdown-item" href="legal koperasi.html">Legal Koperasi</a>
+                                    <a class="dropdown-item" href="dewan pengawas.html">Dewan Pengawas</a>
+                                    <a class="dropdown-item" href="anggota.html">Anggota Koperasi</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="team.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="portofolio.html">Portofolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="berita.html">Berita</a>
+                            </li>
+                            <!-- Dropdown Bahasa -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="https://flagcdn.com/id.svg" alt="Indonesia" style="width: 20px; height: auto;"> Bahasa
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                                    <a class="dropdown-item" href="#" data-lang="id">
+                                        <img src="https://flagcdn.com/id.svg" alt="Indonesia" style="width: 20px; height: auto;"> Indonesia
+                                    </a>
+                                    <a class="dropdown-item" href="#" data-lang="en">
+                                        <img src="https://flagcdn.com/gb.svg" alt="English" style="width: 20px; height: auto;"> English
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </div>
-      </nav>
-    </div>
-  </div> <!-- Detail Box (Text and Logo) -->
+        <!-- Detail Box (Text and Logo) -->
         <div class="detail-box">
             <h1 id="heading">Koperasi Energi <br> Pertambangan, Perdagangan</h1>
             <p id="subheading">Ayo Bermitra Bersama Kami. Untuk Menjadi Anggota Koperasi Menuju Perubahan</p>
@@ -454,109 +466,109 @@
     </section>
 
     <!-- team section -->
-<section class="team_section layout_padding">
-  <div class="container">
-      <div class="heading_container heading_center">
-          <h2 id="teamTitle" class="animated-font">Sumber Daya Manusia</h2>
-          <p id="teamSubtitle"> Didukung oleh IATPI</p>
-      </div>
-      <div class="row">
-          <div class="col-md-4 col-sm-6 mx-auto">
-              <div class="box slide-up">
-                  <div class="img-box">
-                      <img src="images/t2.png" alt="" class="animated-image">
-                  </div>
-                  <div class="detail-box">
-                      <h5>E. Theny Tampi</h5>
-                      <h6>Ketua</h6>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-4 col-sm-6 mx-auto">
-              <div class="box slide-up">
-                  <div class="img-box">
-                      <img src="images/t1.png" alt="" class="animated-image">
-                  </div>
-                  <div class="detail-box">
-                      <h5>Randi Mamola</h5>
-                      <h6>Sekretaris</h6>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-4 col-sm-6 mx-auto">
-              <div class="box slide-up">
-                  <div class="img-box">
-                      <img src="images/t3.png" alt="" class="animated-image">
-                  </div>
-                  <div class="detail-box">
-                      <h5>Muhammad Khaliq Mantiri</h5>
-                      <h6>Bendahara</h6>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
+    <section class="team_section layout_padding">
+        <div class="container">
+            <div class="heading_container heading_center">
+                <h2 id="teamTitle" class="animated-font">Sumber Daya Manusia</h2>
+                <p id="teamSubtitle"> Didukung oleh IATPI</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 mx-auto">
+                    <div class="box slide-up">
+                        <div class="img-box">
+                            <img src="images/t2.png" alt="" class="animated-image">
+                        </div>
+                        <div class="detail-box">
+                            <h5>E. Theny Tampi</h5>
+                            <h6>Ketua</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mx-auto">
+                    <div class="box slide-up">
+                        <div class="img-box">
+                            <img src="images/t1.png" alt="" class="animated-image">
+                        </div>
+                        <div class="detail-box">
+                            <h5>Randi Mamola</h5>
+                            <h6>Sekretaris</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mx-auto">
+                    <div class="box slide-up">
+                        <div class="img-box">
+                            <img src="images/t3.png" alt="" class="animated-image">
+                        </div>
+                        <div class="detail-box">
+                            <h5>Muhammad Khaliq Mantiri</h5>
+                            <h6>Bendahara</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- Mitra Section -->
-<section class="mitra_section">
-    <div class="container">
-        <div class="heading_container heading_center">
-            <h2>Mitra Kami</h2>
-        </div>
-        <div class="row justify-content-center">
-            <!-- Mitra 1 -->
-            <div class="col-6 col-md-3 text-center mb-4">
-                <img src="images/esdm-removebg-preview (1).png" alt="Mitra 1" class="img-fluid" style="width: 100px; height: 100px;">
+    <!-- Mitra Section -->
+    <section class="mitra_section">
+        <div class="container">
+            <div class="heading_container heading_center">
+                <h2>Mitra Kami</h2>
             </div>
-            <!-- Mitra 2 -->
-            <div class="col-6 col-md-3 text-center mb-4">
-                <img src="images/kemenko.png" alt="Mitra 2" class="img-fluid" style="width: 100px; height: 100px;">
-            </div>
-            <!-- Mitra 3 -->
-            <div class="col-6 col-md-3 text-center mb-4">
-                <img src="images/lingkungan-removebg-preview.png" alt="Mitra 3" class="img-fluid" style="width: 100px; height: 100px;">
-            </div>
-            <!-- Mitra 4 -->
-<div class="col-6 col-md-3 text-center mb-4">
-    <img src="images/itb.png" alt="Mitra 4" class="img-fluid" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 1px solid #fff; padding: 5px;">
-  </div>
-            <!-- Mitra 5 -->
-            <div class="col-6 col-md-3 text-center mb-4">
-                <img src="images/al.png" alt="Mitra 5" class="img-fluid" style="width: 100px; height: 100px;">
-            </div>
-            <!-- Mitra 6 -->
-            <div class="col-6 col-md-3 text-center mb-4">
-                <img src="images/LOGO_KOARMADA_RI_PNG.png" alt="Mitra 6" class="img-fluid" style="width: 100px; height: 100px;">
-            </div>
-            <!-- Mitra 7 -->
-            <div class="col-6 col-md-3 text-center mb-4">
-                <img src="images/siloam.png" alt="Mitra 7" class="img-fluid" style="width: 100px; height: 100px;">
-            </div>
-            <div class="col-6 col-md-3 text-center mb-4">
-                <img src="images/iacpi-removebg-preview.png" alt="Mitra 7" class="img-fluid" style="width: 100px; height: 100px;">
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Mitra Section -->
-<section class="mitra_section">
-    <div class="container">
-        <div class="heading_container heading_center">
-            <h2>Bank</h2>
-        </div>
-        <div class="row justify-content-center">
-            <!-- Mitra 1 -->
-            <div class="col-6 col-md-3 text-center mb-4">
-                <img src="images/bca.png" alt="Mitra 1" class="img-fluid" style="width: 100px; height: 100px;">
-            </div>
-            <!-- Mitra 2 -->
-            <div class="col-6 col-md-3 text-center mb-4">
-                <img src="images/bank-sulut.png" alt="Mitra 2" class="img-fluid" style="width: 100px; height: 100px;">
+            <div class="row justify-content-center">
+                <!-- Mitra 1 -->
+                <div class="col-6 col-md-3 text-center mb-4">
+                    <img src="images/esdm-removebg-preview (1).png" alt="Mitra 1" class="img-fluid" style="width: 100px; height: 100px;">
+                </div>
+                <!-- Mitra 2 -->
+                <div class="col-6 col-md-3 text-center mb-4">
+                    <img src="images/kemenko.png" alt="Mitra 2" class="img-fluid" style="width: 100px; height: 100px;">
+                </div>
+                <!-- Mitra 3 -->
+                <div class="col-6 col-md-3 text-center mb-4">
+                    <img src="images/lingkungan-removebg-preview.png" alt="Mitra 3" class="img-fluid" style="width: 100px; height: 100px;">
+                </div>
+                <!-- Mitra 4 -->
+                <div class="col-6 col-md-3 text-center mb-4">
+                    <img src="images/itb.png" alt="Mitra 4" class="img-fluid" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 1px solid #fff; padding: 5px;">
+                </div>
+                <!-- Mitra 5 -->
+                <div class="col-6 col-md-3 text-center mb-4">
+                    <img src="images/al.png" alt="Mitra 5" class="img-fluid" style="width: 100px; height: 100px;">
+                </div>
+                <!-- Mitra 6 -->
+                <div class="col-6 col-md-3 text-center mb-4">
+                    <img src="images/LOGO_KOARMADA_RI_PNG.png" alt="Mitra 6" class="img-fluid" style="width: 100px; height: 100px;">
+                </div>
+                <!-- Mitra 7 -->
+                <div class="col-6 col-md-3 text-center mb-4">
+                    <img src="images/siloam.png" alt="Mitra 7" class="img-fluid" style="width: 100px; height: 100px;">
+                </div>
+                <div class="col-6 col-md-3 text-center mb-4">
+                    <img src="images/iacpi-removebg-preview.png" alt="Mitra 7" class="img-fluid" style="width: 100px; height: 100px;">
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+    <!-- Mitra Section -->
+    <section class="mitra_section">
+        <div class="container">
+            <div class="heading_container heading_center">
+                <h2>Bank</h2>
+            </div>
+            <div class="row justify-content-center">
+                <!-- Mitra 1 -->
+                <div class="col-6 col-md-3 text-center mb-4">
+                    <img src="images/bca.png" alt="Mitra 1" class="img-fluid" style="width: 100px; height: 100px;">
+                </div>
+                <!-- Mitra 2 -->
+                <div class="col-6 col-md-3 text-center mb-4">
+                    <img src="images/bank-sulut.png" alt="Mitra 2" class="img-fluid" style="width: 100px; height: 100px;">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer Section -->
     <footer class="footer_section">
