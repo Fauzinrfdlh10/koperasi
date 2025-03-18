@@ -108,11 +108,37 @@
         }
         /* Responsive Background for Mobile Mode */
         @media (max-width: 768px) {
-            .detail-box h1 {
-                font-size: 2rem;
+            .hero_area {
+                height: 100vh;
+                background-size: cover;
+                background-position: center;
             }
-            .detail-box p {
-                font-size: 1rem;
+            .carousel-item {
+                height: 100vh;
+            }
+            .hero_bg_box {
+                background-size: cover;
+                background-position: center;
+                height: 100vh;
+            }
+            .hero_bg_box:nth-child(1) {
+                background-image: url('images/bg-new/bg-1-mobile.jpeg');
+            }
+            .hero_bg_box:nth-child(2) {
+                background-image: url('images/bg-new/bg-2-mobile.jpeg');
+            }
+            .hero_bg_box:nth-child(3) {
+                background-image: url('images/bg-new/enhanced_image-mobile.jpeg');
+            }
+            .mitra_section img {
+                width: 50%;
+                height: auto;
+                margin: 0 auto;
+            }
+            .team-member .img-box img {
+                width: 50%;
+                height: auto;
+                margin: 0 auto;
             }
         }
         /* Service, About, and Team Section */
@@ -285,16 +311,27 @@
     }
     
     @media (max-width: 768px) {
+  .hero_area {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  .carousel-item {
+    height: 100vh;
+  }
   .hero_bg_box {
     background-size: cover;
     background-position: center;
     height: 100vh;
   }
-  .carousel-item {
-    height: 100vh;
+  .hero_bg_box:nth-child(1) {
+    background-image: url('images/bg-new/bg-1-mobile.jpeg');
   }
-  .hero_area {
-    height: 100vh;
+  .hero_bg_box:nth-child(2) {
+    background-image: url('images/bg-new/bg-2-mobile.jpeg');
+  }
+  .hero_bg_box:nth-child(3) {
+    background-image: url('images/bg-new/enhanced_image-mobile.jpeg');
   }
   .mitra_section img {
     width: 50%;
@@ -307,6 +344,7 @@
     margin: 0 auto;
   }
 }
+
 
     </style>
 </head>
