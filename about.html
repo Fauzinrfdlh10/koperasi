@@ -480,7 +480,17 @@
           "<i class='fa fa-phone' aria-hidden='true'></i> Tlp 085186068917",
           "<i class='fa fa-envelope' aria-hidden='true'></i> Email : patuariminingniaga@gmail.com"
         ],
-        footerText: "&copy; <span id='displayYear'></span> All Rights Reserved By Patuari Mining Niaga"
+        footerText: "&copy; <span id='displayYear'></span> All Rights Reserved By Patuari Mining Niaga",
+        legalitasTitle: "Legalitas Koperasi Produsen Patuari Mining Niaga.",
+        legalitasList: [
+          "Akta Pendirian Koperasi Produsen Patuari Mining Niaga Rabu, 27 Februari 2025. Di Hadapan Ratna Jusuf, Sarjana Hukum, Magister Kenotariatan,Notaris Di Kota Manado,Yang Berdasarkan Surat Keputusan Menteri Negara Koperasi Dan Usaha Kecil Dan Menengah Nomor 263/KEP/ M.KUKM.2/VII/2012.",
+          "KEPUTUSAN MENTERI HUKUM REPUBLIK INDONESIA NOMOR AHU-0001310.AH.01.29. TAHUN 2025 TENTANG PENGESAHAN PENDIRIAN BADAN HUKUM KOPERASI PRODUSEN PATUARI MINING NIAGA.",
+          "Nomor Induk Koperasi ( NIK ) : 7171020030081 ",
+          "Nomor Induk Berusaha ( NIB ) : 1803250013606 ",
+          "NPWP Koperasi : 1000000001015215.",
+          "Pengolahan Wilayah Pertambangan Rakyat ( WPR ) On Progress.",
+          "Izin Pertambangan Rakyat ( IPR ) On Progress."
+        ]
       },
       en: {
         visiMisiTitle: "VISION & MISSION",
@@ -521,7 +531,17 @@
           "<i class='fa fa-phone' aria-hidden='true'></i> Phone 085186068917",
           "<i class='fa fa-envelope' aria-hidden='true'></i> Email : patuariminingniaga@gmail.com"
         ],
-        footerText: "&copy; <span id='displayYear'></span> All Rights Reserved By Patuari Mining Niaga"
+        footerText: "&copy; <span id='displayYear'></span> All Rights Reserved By Patuari Mining Niaga",
+        legalitasTitle: "Legality of Patuari Mining Niaga Cooperative.",
+        legalitasList: [
+          "Deed of Establishment of Patuari Mining Niaga Cooperative on Wednesday, February 27, 2025. In the presence of Ratna Jusuf, Bachelor of Law, Master of Notary, Notary in Manado City, based on the Decree of the Minister of State for Cooperatives and Small and Medium Enterprises Number 263/KEP/M.KUKM.2/VII/2012.",
+          "DECISION OF THE MINISTER OF LAW OF THE REPUBLIC OF INDONESIA NUMBER AHU-0001310.AH.01.29. YEAR 2025 CONCERNING THE APPROVAL OF THE ESTABLISHMENT OF THE LEGAL ENTITY OF PATUARI MINING NIAGA COOPERATIVE.",
+          "Cooperative Business Identification Number ( NIK ) : 7171020030081",
+          "Business Identification Number ( NIB ) : 1803250013606",
+          "Cooperative Taxpayer Identification Number ( NPWP ) : 1000000001015215.",
+          "People's Mining Area Processing ( WPR ) On Progress.",
+          "People's Mining Permit ( IPR ) On Progress."
+        ]
       }
     };
 
@@ -531,7 +551,7 @@
       document.getElementById("visiMisiTitle").textContent = content[lang].visiMisiTitle;
       document.getElementById("visiMisiDescription").textContent = content[lang].visiMisiDescription;
       document.getElementById("visiMisiList").innerHTML = content[lang].visiMisiList.map(item => `<li>${item}</li>`).join("");
-      document.getElementById("riwayatTitle").textContent = content[lang].riwayatTitle;
+      document.getElementById("riwayatTitle").textContent = content[ lang].riwayatTitle;
       document.getElementById("riwayatDescription1").textContent = content[lang].riwayatDescription1;
       document.getElementById("riwayatDescription2").textContent = content[lang].riwayatDescription2;
       document.getElementById("riwayatDescription3").textContent = content[lang].riwayatDescription3;
@@ -545,6 +565,8 @@
       document.getElementById("domisiliTitle").textContent = content[lang].domisiliTitle;
       document.getElementById("domisiliList").innerHTML = content[lang].domisiliList.join("");
       document.getElementById("footerText").innerHTML = content[lang].footerText;
+      document.getElementById("legalitasTitle").textContent = content[lang].legalitasTitle;
+      document.getElementById("legalitasList").innerHTML = content[lang].legalitasList.map(item => `<li>${item}</li>`).join("");
 
       // Simpan preferensi bahasa ke localStorage
       localStorage.setItem("language", lang);
@@ -584,7 +606,7 @@
         slideElements.forEach(element => {
           const elementTop = element.getBoundingClientRect().top;
           const elementBottom = element.getBoundingClientRect().bottom;
-          const isVisible = (elementTop < window.innerHeight) && ( elementBottom >= 0);
+          const isVisible = (elementTop < window.innerHeight) && (elementBottom >= 0);
 
           if (isVisible) {
             element.classList.add('visible');
