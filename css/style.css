@@ -1306,9 +1306,10 @@ footer .copyright p {
 }
 
 /* Dropdown untuk Top Management */
-.dropdown-menu {
-  background-color: rgba(0, 0, 0, 0.8); /* Hitam transparan */
-  border: none;
+@media (min-width: 768px) {
+  #navbarDropdown + .dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
 }
 .dropdown-item {
   color: #fff !important;
